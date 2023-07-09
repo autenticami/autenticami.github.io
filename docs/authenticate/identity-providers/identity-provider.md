@@ -1,6 +1,6 @@
 # Identity Providers
 
-## Loacal Identity Provider
+## Local Identity Provider
 
 ## Social Federation
 
