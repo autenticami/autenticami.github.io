@@ -8,4 +8,4 @@ Autenticami is inspired by AWS Identity and Access Managment (IAM) therefore Pol
 
 - `Who`: *Identities (Users and Roles) that can authenticate*
 - `Can Access`: *Permissions with policies to ensure appropriate access to resources for identities*
-- `Resources`: *Custom resources linked to the account*
+- `Resources`: *Resources linked to the account*
