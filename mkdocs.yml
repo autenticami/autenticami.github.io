@@ -100,7 +100,6 @@ nav:
     - References: references.md
 
 # watch:
-strict: false
 plugins:
   # Built-in
   search: {}
