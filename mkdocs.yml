@@ -43,14 +43,14 @@ nav:
     - Autenticami: 
         - index.md
     - Accounts:
-        - Accounts Intro: accounts/index.md
+        - Accounts: accounts/index.md
         - Learn the basics:
             - Applications:
-                - Applications Intro: accounts/applications/index.md
+                - Applications: accounts/applications/index.md
             - APIs:
-                - APIs Intro: accounts/apis/index.md
+                - APIs: accounts/apis/index.md
             - IAM:
-                - IAM Intro: accounts/iam/index.md
+                - IAM: accounts/iam/index.md
                 - Users: accounts/iam/users.md
                 - Roles: accounts/iam/roles.md
                 - Permissions: accounts/iam/permissions.md
@@ -63,24 +63,24 @@ nav:
                 - Permissions: accounts/configurations/iam/permissions.md
                 - Policies: accounts/configurations/iam/policies.md
     - Authenticate:
-        - Authenticat Intro: authenticate/index.md
+        - Authenticate: authenticate/index.md
         - Login: authenticate/login.md
         - Single Sign-On: authenticate/sso.md
         - Provision Users:
             - Identity Providers: 
-                - Identity Providers Intro: authenticate/identity-providers/index.md
+                - Identity Providers: authenticate/identity-providers/index.md
                 - Social Identity Providers: authenticate/identity-providers/social/index.md
                 - Enterprise Identity Providers: authenticate/identity-providers/enterprise/index.md
             - Database Connections: 
-                - Database Connections Intro: authenticate/database-connections/index.md
+                - Database Connections: authenticate/database-connections/index.md
                 - Autenticami Database: authenticate/database-connections/autenticami/index.md
     - Secure:
         - Protect your application:
             - Tokens: 
-                - Tokens Intro: secure/protect-your-application/tokens/index.md
+                - Tokens: secure/protect-your-application/tokens/index.md
                 - Token Types:
                     - JWTs:
-                        - JWTs Intro: secure/protect-your-application/tokens/token-types/jwt-token/index.md
+                        - JWTs: secure/protect-your-application/tokens/token-types/jwt-token/index.md
                         - Creation: secure/protect-your-application/tokens/token-types/jwt-token/creation.md
                         - Validation: secure/protect-your-application/tokens/token-types/jwt-token/validation.md
                         - Claims: secure/protect-your-application/tokens/token-types/jwt-token/claims.md
@@ -88,14 +88,14 @@ nav:
                 - Access Token: secure/protect-your-application/tokens/access-token/index.md
                 - Refresh Token: secure/protect-your-application/tokens/refresh-token/index.md
             - Manage Secrets: 
-                - Manage Secrets Intro: secure/protect-your-application/manage-secrets/index.md
+                - Manage Secrets: secure/protect-your-application/manage-secrets/index.md
     - Endpoints:
-        - Endpoint Intro: endpoints/index.md
+        - Endpoint: endpoints/index.md
         - Console: 
             - Management: endpoints/console/management.md
         - Accounts:
             - Management: 
-                - Management Intro: endpoints/accounts/management/index.md
+                - Management: endpoints/accounts/management/index.md
             - OAuth:
                 - Authorization: endpoints/accounts/oauth/authorization.md
                 - Token: endpoints/accounts/oauth/token.md
@@ -105,7 +105,7 @@ nav:
             - Keys:
                 - JSON Web Key Set: endpoints/accounts/keys/json-web-key-set.md
     - Troubleshoot:
-        - Troubleshoot Intro: troubleshoot/index.md
+        - Troubleshoot: troubleshoot/index.md
     - References: references.md
 
 # watch:
