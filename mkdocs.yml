@@ -6,7 +6,6 @@ site_url: https://hatch.pypa.io/latest/
 # repo_url: 
 # edit_uri: 
 copyright: 'Copyright &copy; Nitro Agility S.r.l. 2023-present'
-
 docs_dir: docs
 site_dir: site
 theme:
