@@ -1,0 +1,47 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "autenticami"
+description = "Autenticami."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.7"
+keywords = [
+  "build",
+  "dependency",
+  "environment",
+  "hatch",
+  "packaging",
+  "plugin",
+  "publishing",
+  "release",
+  "versioning",
+]
+authors = [
+  { name = "Nitro Agility S.r.l.", email = "opensource@nitroagility.com" },
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Topic :: Software Development :: Build Tools",
+]
+dependencies = [
+  "hatchling>=1.11.0",
+  "virtualenv>=20.16.2",
+]
+dynamic = ["version"]
+
+[tool.hatch.version]
+path = "__about__.py"
