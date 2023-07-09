@@ -4,7 +4,7 @@ An `Identity Security` is a solution for securing all identities used in an acco
 
 There are several types of identities:
 
-- [User and Groups](users-groups)
-- [Roles](roles)
+- [User and Groups](../users-groups)
+- [Roles](../roles)
 
-Autenticami implements `OAuth` and `OpenId` protocols, in particular an `Authenticated Identity` is issued with an `Access Token` that can be used by third-party Applications and APIs to grant access to its resources.
+Autenticami implements `OAuth` and `OpenId` protocols, in particular an `Authenticated Identity` is issued with an `Access Token` that can be used by third-party Apps to grant access to its resources.

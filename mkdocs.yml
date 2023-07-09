@@ -40,8 +40,7 @@ theme:
     - navigation.instant
 
 nav:
-    - Autenticami: 
-        - index.md
+    - Autenticami: index.md
     - Accounts:
         - Accounts: accounts/index.md
         - Identities:
@@ -49,7 +48,7 @@ nav:
           - Users and Groups: accounts/identities/users-groups.md
           - Roles: accounts/identities/roles.md
         - Apps & Resources:
-          - Applications: accounts/apps-resources/applications.md
+          - Apps: accounts/apps-resources/apps.md
           - Resources: accounts/apps-resources/resources.md
         - Access Management:
           - Permissions and Policies: accounts/access-management/permissions-policies.md
@@ -67,14 +66,14 @@ nav:
                 - Database Connections: authenticate/database-connections/index.md
                 - Autenticami Database: authenticate/database-connections/autenticami/index.md
     - Secure:
-        - Protect your application:
+        - Protect your resources:
             - Tokens: 
-                - Token Based Authentication: secure/protect-your-application/tokens/index.md
-                - ID Token: secure/protect-your-application/tokens/id-token/index.md
-                - Access Token: secure/protect-your-application/tokens/access-token/index.md
-                - Refresh Token: secure/protect-your-application/tokens/refresh-token/index.md
+                - Token Based Authentication: secure/protect-your-resources/tokens/index.md
+                - ID Token: secure/protect-your-resources/tokens/id-token/index.md
+                - Access Token: secure/protect-your-resources/tokens/access-token/index.md
+                - Refresh Token: secure/protect-your-resources/tokens/refresh-token/index.md
             - Manage Secrets: 
-                - Manage Secrets: secure/protect-your-application/manage-secrets/index.md
+                - Manage Secrets: secure/protect-your-resources/manage-secrets/index.md
     - Console & Endpoints:
         - Management Console: console-endpoints/console.md
         - Endpoint: console-endpoints/endpoints.md
