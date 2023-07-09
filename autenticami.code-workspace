@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "./repos/autenticami.github.io"
+		},
+	],
+	"settings": {
+		"files.exclude": {
+			"repos": true,
+			"**/__pycache__/**": true,
+			"**/dist/**": false,
+			"**/build/**": false
+		},
+	}
+}

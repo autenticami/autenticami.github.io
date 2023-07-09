@@ -1,0 +1,19 @@
+version: 1
+workspace:
+  id: 0411ef15d4f5435996549b275a8cd653
+  name: autenticami-workspace
+commands:
+  - name: clone
+    description: Clone repositories
+    steps:
+      - script: if [ ! -d "./repos" ]; then mkdir ./repos; fi;
+      - cwd: ./repos
+        scripts:
+          - 'if [ ! -d "./autenticami.github.io" ]; then git clone git@github.com:autenticami/autenticami.github.io.git; fi;'
+  - name: git-commit
+    description: Commit all
+    steps:
+      - cwd: ./repos
+        scripts:
+          - 'git add -A && git commit -m "Automated commit." && git push || echo DONE'
+          - 'if [ -d "./autenticami.github.ioi" ]; then cd ./autenticami.github.ioi && git add -A && git commit -m "Automated commit." && git push || echo DONE; fi;'
