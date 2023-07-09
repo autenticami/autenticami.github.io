@@ -8,4 +8,4 @@ By the means of `Autenticami` it is possibile to specify who or what can access 
 
 - `Who`: *Users and Roles that can authenticate*
 - `Can Access`: *Permission with policies to ensure appropriate access to resources for identities*
-- `Resources`: *Custom resources defined into the account*
+- `Resources`: *Custom resources linked to an app*
