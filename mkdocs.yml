@@ -54,14 +54,12 @@ nav:
           - Permissions and Policies: accounts/access-management/permissions-policies.md
     - Authenticate:
         - Authenticate Users:
-          - Authentication Providers:
-            - Login: authenticate/login.md
-            - Single Sign-On: authenticate/sso.md
+          - Login: authenticate/login.md
+          - Single Sign-On: authenticate/sso.md
         - Provision Users:
-            - Identity Providers: 
-                - Identity Providers: authenticate/identity-providers/index.md
-                - Social Identity Providers: authenticate/identity-providers/social/index.md
-                - Enterprise Identity Providers: authenticate/identity-providers/enterprise/index.md
+            - Identity Providers: authenticate/identity-providers/index.md
+            - Social Identity Providers: authenticate/identity-providers/social/index.md
+            - Enterprise Identity Providers: authenticate/identity-providers/enterprise/index.md
             - Database Connections: 
                 - Database Connections: authenticate/database-connections/index.md
                 - Autenticami Database: authenticate/database-connections/autenticami/index.md
