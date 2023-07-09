@@ -44,24 +44,10 @@ nav:
         - index.md
     - Accounts:
         - Accounts: accounts/index.md
-        - Learn the basics:
-            - Applications:
-                - Applications: accounts/applications/index.md
-            - APIs:
-                - APIs: accounts/apis/index.md
-            - IAM:
-                - IAM: accounts/iam/index.md
-                - Users: accounts/iam/users.md
-                - Roles: accounts/iam/roles.md
-                - Permissions: accounts/iam/permissions.md
-                - Policies: accounts/iam/policies.md
-        - Configurations:
-            - Applications: accounts/configurations/applications/application.md
-            - APIs: accounts/configurations/apis/api.md
-            - IAM:
-                - User and Roles: accounts/configurations/iam/user-roles.md
-                - Permissions: accounts/configurations/iam/permissions.md
-                - Policies: accounts/configurations/iam/policies.md
+        - Identities:
+          - Identity: accounts/identities/identity.md
+          - Users and Groups: accounts/identities/users-groups.md
+          - Roles: accounts/identities/roles.md
     - Authenticate:
         - Authenticate: authenticate/index.md
         - Login: authenticate/login.md
