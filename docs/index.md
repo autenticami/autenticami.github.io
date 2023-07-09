@@ -2,8 +2,6 @@
 
 `Autenticami` is a multi-account `Identity and Access Managment` (IAM or IdAM) platform that provides the foundations for creating an identity-based application access control.
 
-The platform allows for the creation of policies to ensure that the correct identity has the appropriate access to resources linked to an account.
-
 !!! info "INFO"
     `Autenticami` is inspired by AWS IAM and Policies are implemented using an `AWS like definition languange`.
 
