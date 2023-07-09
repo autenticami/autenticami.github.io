@@ -54,9 +54,10 @@ nav:
         - Access Management:
           - Permissions and Policies: accounts/access-management/permissions-policies.md
     - Authenticate:
-        - Authenticate: authenticate/index.md
-        - Login: authenticate/login.md
-        - Single Sign-On: authenticate/sso.md
+        - Authenticate Users:
+          - Authentication Providers:
+            - Login: authenticate/login.md
+            - Single Sign-On: authenticate/sso.md
         - Provision Users:
             - Identity Providers: 
                 - Identity Providers: authenticate/identity-providers/index.md
@@ -68,35 +69,16 @@ nav:
     - Secure:
         - Protect your application:
             - Tokens: 
-                - Tokens: secure/protect-your-application/tokens/index.md
-                - Token Types:
-                    - JWTs:
-                        - JWTs: secure/protect-your-application/tokens/token-types/jwt-token/index.md
-                        - Creation: secure/protect-your-application/tokens/token-types/jwt-token/creation.md
-                        - Validation: secure/protect-your-application/tokens/token-types/jwt-token/validation.md
-                        - Claims: secure/protect-your-application/tokens/token-types/jwt-token/claims.md
+                - Token Based Authentication: secure/protect-your-application/tokens/index.md
                 - ID Token: secure/protect-your-application/tokens/id-token/index.md
                 - Access Token: secure/protect-your-application/tokens/access-token/index.md
                 - Refresh Token: secure/protect-your-application/tokens/refresh-token/index.md
             - Manage Secrets: 
                 - Manage Secrets: secure/protect-your-application/manage-secrets/index.md
-    - Endpoints:
-        - Endpoint: endpoints/index.md
-        - Console: 
-            - Management: endpoints/console/management.md
-        - Accounts:
-            - Management: 
-                - Management: endpoints/accounts/management/index.md
-            - OAuth:
-                - Authorization: endpoints/accounts/oauth/authorization.md
-                - Token: endpoints/accounts/oauth/token.md
-                - UserInfo: endpoints/accounts/oauth/userinfo.md
-            - OpenID:
-                - Configuration: endpoints/accounts/openid/configuration.md
-            - Keys:
-                - JSON Web Key Set: endpoints/accounts/keys/json-web-key-set.md
-    - Troubleshoot:
-        - Troubleshoot: troubleshoot/index.md
+    - Console & Endpoints:
+        - Management Console: console-endpoints/console.md
+        - Endpoint: console-endpoints/endpoints.md
+    - Troubleshoot: troubleshoot/index.md
     - References: references.md
 
 # watch:
