@@ -8,5 +8,5 @@
 By the means of `Autenticami` it is possibile to specify who or what can access resources by the means of fine-grained permissions.
 
 - `Who`: *Users and Roles that can authenticate*
-- `Can Access`: *Permission with policies to ensure appropriate access to resources for users and roles*
+- `Can Access`: *Permission with policies to ensure appropriate access to resources for identities*
 - `Resources`: *Custom resources defined into the account*
