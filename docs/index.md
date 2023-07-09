@@ -9,4 +9,4 @@
 
 - `Who`: *Identities (Users and Roles) that can authenticate*
 - `Can Access`: *Permissions with policies to ensure appropriate access to resources for identities*
-- `Resources`: *Custom resources linked to an app*
+- `Resources`: *Custom resources linked to the account*
