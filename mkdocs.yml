@@ -42,7 +42,7 @@ theme:
 nav:
     - Autenticami: index.md
     - Accounts:
-        - Account: accounts/account.md
+        - accounts/account.md
         - Identities:
           - Identity: accounts/identities/identity.md
           - Users and Groups: accounts/identities/users-groups.md
