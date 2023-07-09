@@ -42,7 +42,7 @@ theme:
 nav:
     - Autenticami: index.md
     - Accounts:
-        - Accounts: accounts/index.md
+        - Account: accounts/account.md
         - Identities:
           - Identity: accounts/identities/identity.md
           - Users and Groups: accounts/identities/users-groups.md
@@ -53,16 +53,10 @@ nav:
         - Access Management:
           - Permissions and Policies: accounts/access-management/permissions-policies.md
     - Authenticate:
-        - Authenticate Users:
-          - Login: authenticate/login.md
-          - Single Sign-On: authenticate/sso.md
+        - Authentication: authenticate/authentication-providers/index.md
         - Provision Users:
-            - Identity Providers: authenticate/identity-providers/index.md
-            - Social Identity Providers: authenticate/identity-providers/social/index.md
-            - Enterprise Identity Providers: authenticate/identity-providers/enterprise/index.md
-            - Database Connections: 
-                - Database Connections: authenticate/database-connections/index.md
-                - Autenticami Database: authenticate/database-connections/autenticami/index.md
+          - authenticate/identity-providers/index.md
+          - Database Connections: authenticate/identity-providers/database-connections.md
     - Secure:
         - Protect your resources:
             - Tokens: 
