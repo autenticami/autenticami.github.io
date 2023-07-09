@@ -53,10 +53,9 @@ nav:
         - Access Management:
           - Permissions and Policies: accounts/access-management/permissions-policies.md
     - Authenticate:
-        - Authentication: authenticate/authentication-providers/index.md
+        - Authentication: authenticate/authentication-providers/authentication.md
         - Provision Users:
-          - authenticate/identity-providers/index.md
-          - Database Connections: authenticate/identity-providers/database-connections.md
+          - authenticate/identity-providers/identity-provider.md
     - Secure:
         - Protect your resources:
             - Tokens: 
@@ -64,11 +63,9 @@ nav:
                 - ID Token: secure/protect-your-resources/tokens/id-token/index.md
                 - Access Token: secure/protect-your-resources/tokens/access-token/index.md
                 - Refresh Token: secure/protect-your-resources/tokens/refresh-token/index.md
-            - Manage Secrets: 
-                - Manage Secrets: secure/protect-your-resources/manage-secrets/index.md
     - Console & Endpoints:
         - Management Console: console-endpoints/console.md
-        - Endpoint: console-endpoints/endpoints.md
+        - Endpoints: console-endpoints/endpoints.md
     - Troubleshoot: troubleshoot/index.md
     - References: references.md
 

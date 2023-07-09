@@ -7,6 +7,6 @@
 
 `Autenticami` allows to specify who or what can access resources by the means of fine-grained permissions.
 
-- `Who`: *Users and Roles that can authenticate*
-- `Can Access`: *Permission with policies to ensure appropriate access to resources for identities*
+- `Who`: *Identities (Users and Roles) that can authenticate*
+- `Can Access`: *Permissions with policies to ensure appropriate access to resources for identities*
 - `Resources`: *Custom resources linked to an app*

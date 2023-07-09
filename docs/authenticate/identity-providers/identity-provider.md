@@ -1,6 +1,6 @@
 # Identity Providers
 
-## Username and Password
+## Loacal Identity Provider
 
 ## Social Federation
 
