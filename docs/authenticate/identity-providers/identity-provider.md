@@ -4,4 +4,4 @@
 
 ## Social Federation
 
-## Enteprise Federations
+## Enterprise Federations
