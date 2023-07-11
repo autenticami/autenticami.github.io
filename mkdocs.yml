@@ -44,7 +44,7 @@ nav:
     - Accounts:
         - accounts/account.md
         - Identities:
-          - Identity: accounts/identities/identity.md
+          - accounts/identities/identities.md
           - Users and Groups: accounts/identities/users-groups.md
           - Roles: accounts/identities/roles.md
         - Apps & Resources:
