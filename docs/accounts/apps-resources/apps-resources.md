@@ -8,7 +8,7 @@ An app developer sets up the account to map apps and resources, and finally impl
 
 An app represents a virtual application that contains resources. Multiple applications can share the same resources.
 
-## Resources
+## Resources
 
 A resource is a virtual resource that has policies associated with it.
 For each resource, you can specify a collection of actions and tags.
