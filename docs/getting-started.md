@@ -36,9 +36,9 @@ Naturally, it is required to create identities to access the application.
 
 | IDENTITY TYPE | ARN                                        |
 |---------------|--------------------------------------------|
-| USER          | arn:hr-app:iam::470676885481:user/john     |
-| ROLE          | arn:hr-app:iam::470676885481:role/manager  |
-| ROLE          | arn:hr-app:iam::470676885481:role/employee |
+| USER          | arn:hr-app:iam::581616507495:user/john     |
+| ROLE          | arn:hr-app:iam::581616507495:role/manager  |
+| ROLE          | arn:hr-app:iam::581616507495:role/employee |
 
 ## Create Permissions and Policies
 
