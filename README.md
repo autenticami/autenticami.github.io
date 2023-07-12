@@ -14,7 +14,7 @@ Below a sample policy document to grant access to the resources Employee and Tim
 
 ```json
 {
-  "Version": "2022-07-21",
+  "Employee": "2022-07-21",
   "Statement": [
     {
       "Sid": "hr-app/employee/reader",

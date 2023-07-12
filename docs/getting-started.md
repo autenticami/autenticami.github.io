@@ -6,6 +6,7 @@ Let's take a third-party HR application as an example. As a developer you need t
 - [Create Apps and Resources](#create-apps-and-resources)
 - [Create Identities](#create-identities)
 - [Create Permissions and Policies](#create-permissions-and-policies)
+- [Third Party Integration](#third-party-integration)
 
 ## Create an Account
 
@@ -70,4 +71,41 @@ At this point, all that remains is to create the policies and assign them to the
     }
   ]
 }
+```
+
+## Third Party Integration
+
+Once everything is configured, you can go ahead with the integration into your application. 
+This can be done using a Autenticami SDK for your application language.
+
+Below is an example of integration in a python application with fastapi.
+
+```python
+@router.get(
+    '/employees',
+    response_model=list[DTOEmployeeResponse],
+    response_description='Get all employees',
+    status_code=status.HTTP_200_OK,
+    tags=['hr'],
+)
+async def get_employees(
+   
+    iam_context: IAMHrContext = Depends(get_current_iam_context)
+):
+    """
+    Retrieve list of the employees
+    """
+    try:
+        iam_profile = iam_context.iam_profile
+        if not iam_context.iam_provider.can_list_employees(iam_profile):
+            raise IAMUnauthorizedException('User has not been granted permissions to list employees')
+        ...
+        ...
+        return dto_employees
+    except IAMUnauthorizedException as e:
+        logger.error(e, exc_info=True, stack_info=True)
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=e.args[0])
+    except Exception as e:
+        logger.error(e, exc_info=True, stack_info=True)
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail='Internal Server Error')
 ```
