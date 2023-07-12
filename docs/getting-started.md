@@ -2,12 +2,12 @@
 
 Let's take a third-party HR application as an example. As a developer you need to:
 
-- [Create an account](#create-an-account)
+- [Create an Account](#create-an-account)
 - [Create Apps and Resources](#create-apps-and-resources)
-- [Create identities](#create-identities)
-- [Create policies and permissions](#create-policies-and-permissions)
+- [Create Identities](#create-identities)
+- [Create Permissions and Policies](#create-permissions-and-policies)
 
-## Create an account
+## Create an Account
 
 The very first step is to create an account.
 
@@ -30,7 +30,7 @@ Once done you have to create the resources for each application and for each of 
 | Employee      | hr-app:employee  | Create, Update, Delete, List |
 | Timesheet     | hr-app:timesheet | Create, Update, Delete, List |
 
-## Create identities
+## Create Identities
 
 Naturally, it is required to create identities to access the application.
 
@@ -40,7 +40,7 @@ Naturally, it is required to create identities to access the application.
 | ROLE          | arn:hr-app:iam::470676885481:role/manager  |
 | ROLE          | arn:hr-app:iam::470676885481:role/employee |
 
-## Create policies and permissions
+## Create Permissions and Policies
 
 At this point, all that remains is to create the policies and assign them to the identities as permissions.
 
