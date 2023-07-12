@@ -9,7 +9,7 @@ There are mainly two types of identities:
 
 ## Principals
 
-A `Principal` is an human user or workload with granted permissions that authtenticates and make requests, specifically:
+A `Principal` is an human user or workload with granted permissions that authenticates and make requests, specifically:
 
 - A user
 - A role

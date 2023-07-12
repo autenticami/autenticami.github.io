@@ -5,7 +5,7 @@ site_url: https://hatch.pypa.io/latest/
 # repo_name: 
 # repo_url: 
 # edit_uri: 
-copyright: 'Copyright &copy; Nitro Agility S.r.l. 2023-present'
+copyright: 'Copyright &copy; Nitro Agility S.r.l. 2022-present'
 docs_dir: docs
 site_dir: site
 theme:
@@ -40,7 +40,9 @@ theme:
     - navigation.instant
 
 nav:
-    - Autenticami: index.md
+    - Autenticami: 
+      - index.md
+      - Getting Started: getting-started.md
     - Accounts:
         - accounts/account.md
         - Identities:

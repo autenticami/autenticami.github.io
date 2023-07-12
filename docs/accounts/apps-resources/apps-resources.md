@@ -1,14 +1,14 @@
 # Apps and Resources
 
-Autenticami doesn't acutally own the resources but it is a solution to enable a modern identity-based application access control for applications.
-
-An app developer sets up the account to map apps and resources, and finally implements access management policies and permissions.
+Autenticami doesn't actually own the resources but it is a solution to enable a modern identity-based application access control for third party applications.
 
 ## Apps
 
-An app represents a virtual application that contains resources. Multiple applications can share the same resources.
+An app represents a third party application that contains resources. Multiple applications can share the same resources.
+For each application, you can specify a collection of tags.
+
 
 ## Resources
 
-A resource is a virtual resource that has policies associated with it.
+A resource represents a resource from a third-party application.
 For each resource, you can specify a collection of actions and tags.
