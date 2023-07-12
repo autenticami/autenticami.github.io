@@ -17,7 +17,7 @@ In particular policies are `Identity-based policies` as they can be attached onl
 !!! info "INFO"
     `Resources` are defined within the account, however identities are themselves resources that can be target of `policies` actions.
 
-## Trust Policy for roles
+## Trust Policy for Roles
 
 A `Trust Policy` define which principal can assume the role, and under which conditions.
 
