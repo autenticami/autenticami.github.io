@@ -7,7 +7,7 @@ Policies are implemented as a document listing the actions that can be performed
 In particular policies are `Identity-based policies` as they can be attached only to identities.
 
 !!! info "INFO"
-    By default no permission is associated to an identity, hence an identity can't access anythong until permissions are granted.
+    By default no permission is associated to an identity, hence an identity can't access anything until permissions are granted.
 
 `Permissions` are a collection of policies that can be associated to identities. There are two types of permissions:
 

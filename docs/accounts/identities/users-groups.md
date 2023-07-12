@@ -1,6 +1,6 @@
 # Users and Groups
 
-`Users` and `Groups` are identities within an Autenticami account.
+`Users` and `Groups` are identities within an account account.
 
 ## Users
 
