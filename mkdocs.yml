@@ -18,63 +18,63 @@ theme:
     text: Roboto
     code: Roboto Mono
   palette:
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: pink
-      accent: pink
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: pink
-      accent: pink
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: pink
+    accent: pink
+    toggle:
+      icon: material/weather-night
+      name: Switch to light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: pink
+    accent: pink
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to dark mode
   features:
-    - navigation.sections
-    - navigation.expand
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.instant
-    - content.code.copy
-    - content.code.annotate # (1)!
-    - content.code.select
+  - navigation.sections
+  - navigation.expand
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.instant
+  - content.code.copy
+  - content.code.annotate # (1)!
+  - content.code.select
 
 nav:
-    - Autenticami: 
-      - index.md
-      - Getting Started: getting-started.md
-    - Accounts:
-        - accounts/account.md
-        - Identities:
-          - accounts/identities/identities.md
-          - Users and Groups: accounts/identities/users-groups.md
-          - Roles: accounts/identities/roles.md
-        - Apps:
-          - Applications: accounts/apps/applications.md
-          - Domains: accounts/apps/domains.md
-          - Resources: accounts/apps/resources.md
-        - Access Management:
-          - Permissions and Policies: accounts/access-management/permissions-policies.md
-          - Policy Reference: accounts/access-management/policy-reference/index.md
-    - Authenticate:
-        - Authentication: authenticate/authentication-providers/authentication.md
-        - Provision Users:
-          - authenticate/identity-providers/identity-provider.md
-    - Secure:
-        - Protect your resources:
-            - Tokens: 
-                - Token Based Authentication: secure/protect-your-resources/tokens/index.md
-                - ID Token: secure/protect-your-resources/tokens/id-token/index.md
-                - Access Token: secure/protect-your-resources/tokens/access-token/index.md
-                - Refresh Token: secure/protect-your-resources/tokens/refresh-token/index.md
-    - Console & Endpoints:
-        - Management Console: console-endpoints/console.md
-        - Endpoints: console-endpoints/endpoints.md
-    - Troubleshoot: troubleshoot/index.md
-    - References: references.md
+- Autenticami:
+  - index.md
+  - Getting Started: getting-started.md
+- Accounts:
+  - accounts/account.md
+  - Identities:
+    - accounts/identities/identities.md
+    - Users and Groups: accounts/identities/users-groups.md
+    - Roles: accounts/identities/roles.md
+  - Applications:
+    - Applications: accounts/applications/applications.md
+    - Domains: accounts/applications/domains.md
+    - Resources: accounts/applications/resources.md
+  - Access Management:
+    - Permissions and Policies: accounts/access-management/permissions-policies.md
+    - Policy Reference: accounts/access-management/policy-reference/index.md
+- Authenticate:
+  - Authentication: authenticate/authentication-providers/authentication.md
+  - Provision Users:
+    - authenticate/identity-providers/identity-provider.md
+- Secure:
+  - Protect your resources:
+    - Tokens:
+      - Token Based Authentication: secure/protect-your-resources/tokens/index.md
+      - ID Token: secure/protect-your-resources/tokens/id-token/index.md
+      - Access Token: secure/protect-your-resources/tokens/access-token/index.md
+      - Refresh Token: secure/protect-your-resources/tokens/refresh-token/index.md
+- Console & Endpoints:
+  - Management Console: console-endpoints/console.md
+  - Endpoints: console-endpoints/endpoints.md
+- Troubleshoot: troubleshoot/index.md
+- References: references.md
 
 # watch:
 plugins:
@@ -89,7 +89,7 @@ plugins:
     # Required for blog plugin's generated indices
     fallback_to_build_date: true
     exclude:
-      - blog/**/*
+    - blog/**/*
   mike:
     alias_type: copy
   mkdocstrings:
@@ -98,68 +98,68 @@ plugins:
     redirect_maps:
 
 markdown_extensions:
-  # Built-in
-  - markdown.extensions.abbr:
-  - markdown.extensions.admonition:
-  - markdown.extensions.attr_list:
-  - markdown.extensions.footnotes:
-  - markdown.extensions.meta:
-  - markdown.extensions.tables:
-  - markdown.extensions.toc:
-      permalink: true
-  # Extra
-  - mkdocs-click:
-  - pymdownx.arithmatex:
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret:
-  - pymdownx.critic:
-  - pymdownx.details:
-  - pymdownx.emoji:
-      # https://github.com/twitter/twemoji
-      # https://raw.githubusercontent.com/facelessuser/pymdown-extensions/master/pymdownx/twemoji_db.py
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight:
-      guess_lang: false
-      linenums_style: pymdownx-inline
-      use_pygments: true
-  - pymdownx.inlinehilite:
-  - pymdownx.keys:
-  - pymdownx.magiclink:
-      repo_url_shortener: true
-      repo_url_shorthand: true
-      social_url_shortener: true
-      social_url_shorthand: true
-      normalize_issue_symbols: true
-      provider: github
-      user: pypa
-      repo: hatch
-  - pymdownx.mark:
-  - pymdownx.progressbar:
-  - pymdownx.saneheaders:
-  - pymdownx.smartsymbols:
-  - pymdownx.snippets:
-      check_paths: true
-      base_path:
-        - docs/.snippets
-      auto_append:
-        - links.txt
-        - abbrs.txt
-  - pymdownx.superfences:
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde:
+# Built-in
+- markdown.extensions.abbr:
+- markdown.extensions.admonition:
+- markdown.extensions.attr_list:
+- markdown.extensions.footnotes:
+- markdown.extensions.meta:
+- markdown.extensions.tables:
+- markdown.extensions.toc:
+    permalink: true
+# Extra
+- mkdocs-click:
+- pymdownx.arithmatex:
+- pymdownx.betterem:
+    smart_enable: all
+- pymdownx.caret:
+- pymdownx.critic:
+- pymdownx.details:
+- pymdownx.emoji:
+    # https://github.com/twitter/twemoji
+    # https://raw.githubusercontent.com/facelessuser/pymdown-extensions/master/pymdownx/twemoji_db.py
+    emoji_index: !!python/name:materialx.emoji.twemoji
+    emoji_generator: !!python/name:materialx.emoji.to_svg
+- pymdownx.highlight:
+    guess_lang: false
+    linenums_style: pymdownx-inline
+    use_pygments: true
+- pymdownx.inlinehilite:
+- pymdownx.keys:
+- pymdownx.magiclink:
+    repo_url_shortener: true
+    repo_url_shorthand: true
+    social_url_shortener: true
+    social_url_shorthand: true
+    normalize_issue_symbols: true
+    provider: github
+    user: pypa
+    repo: hatch
+- pymdownx.mark:
+- pymdownx.progressbar:
+- pymdownx.saneheaders:
+- pymdownx.smartsymbols:
+- pymdownx.snippets:
+    check_paths: true
+    base_path:
+    - docs/.snippets
+    auto_append:
+    - links.txt
+    - abbrs.txt
+- pymdownx.superfences:
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.tilde:
 
 extra:
   version:
     provider: mike
   social:
 extra_css:
-  - assets/css/custom.css
-  - https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css
+- assets/css/custom.css
+- https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css
 extra_javascript:
-    - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
-    - javascripts/tablesort.js
+- https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+- javascripts/tablesort.js
