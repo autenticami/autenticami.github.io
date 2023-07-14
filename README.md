@@ -39,6 +39,20 @@ Below a sample policy document to grant access to the resources Employee and Tim
         "arn:hr:people::581616507495:user/*"
       ]
     }
+  ],
+  "Deny": [
+    {
+      "DisplayName": "hr/people/timesheet/writer/any",
+      "Actions": [
+        "people:timesheet:Read",
+        "people:timesheet:Create",
+        "people:timesheet:Update",
+        "people:timesheet:Delete"
+      ],
+      "Resources": [
+        "arn:hr:people::581616507495:user/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
+      ]
+    }
   ]
 }
 ```
