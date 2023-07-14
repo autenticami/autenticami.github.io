@@ -11,7 +11,7 @@
 - `Can Access`: *Permissions with policies to ensure appropriate access to resources for identities*
 - `Resources`: *Resources linked to the account*
 
-Below a sample policy document to grant access to the resources Employee and Timesheet of the HR Application (HR-App):
+Below a sample policy document to grant access to the resources Employee and Timesheet of the HR Application (hr-app):
 
 ```json
 {
