@@ -80,9 +80,6 @@ At this point, all that remains is to create the policies and assign them to the
       "DisplayName": "hr/people/timesheet/writer/any",
       "Actions": [
         "people:timesheet:Read",
-        "people:timesheet:Create",
-        "people:timesheet:Update",
-        "people:timesheet:Delete"
       ],
       "Resources": [
         "arn:hr:people::581616507495:user/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
