@@ -7,6 +7,10 @@ Autenticami doesn't actually own the resources but it is a solution to enable a 
 An app represents a third party application that contains resources. Multiple applications can share the same resources.
 For each application, you can specify a collection of tags.
 
+## Domains
+
+An application is divided into domains, using a DDD approach.
+
 
 ## Resources
 

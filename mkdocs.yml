@@ -49,8 +49,8 @@ nav:
           - accounts/identities/identities.md
           - Users and Groups: accounts/identities/users-groups.md
           - Roles: accounts/identities/roles.md
-        - Apps & Resources:
-          - Apps and Resources: accounts/apps-resources/apps-resources.md
+        - Apps:
+          - Apps: accounts/apps/apps.md
         - Access Management:
           - Permissions and Policies: accounts/access-management/permissions-policies.md
           - Policy Reference: accounts/access-management/policy-reference/index.md
