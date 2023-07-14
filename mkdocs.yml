@@ -38,6 +38,9 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.instant
+    - content.code.copy
+    - content.code.annotate # (1)!
+    - content.code.select
 
 nav:
     - Autenticami: 

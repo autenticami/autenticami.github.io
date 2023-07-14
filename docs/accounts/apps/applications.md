@@ -1,4 +1,4 @@
-# Apps and Resources
+# Applications
 
 Autenticami doesn't actually own the resources but it is a solution to enable a modern identity-based application access control for third party applications.
 
@@ -16,3 +16,6 @@ An application is divided into domains, using a DDD approach.
 
 A resource represents a resource from a third-party application that are organised into domains.
 For each resource, you can specify a collection of actions and tags.
+
+A resource is uniquely identified with an ARN (Applicative Resource Name).
+

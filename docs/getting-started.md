@@ -3,10 +3,10 @@
 Let's take a third-party HR application as an example. As a developer you need to:
 
 - [Create an Account](#create-an-account)
-- [Create Applications, Domains and Resources](create-applications-domains-and-resources)
+- [Create Applications, Domains and Resources](#create-applications-domains-and-resources)
 - [Create Identities](#create-identities)
 - [Create Permissions and Policies](#create-permissions-and-policies)
-- [Third Party Integration](#third-party-integration)
+- [Application Integration via SDK](#application-integration-via-sdk)
 
 ## Create an Account
 
@@ -45,35 +45,40 @@ Naturally, it is required to create identities to access the application.
 
 At this point, all that remains is to create the policies and assign them to the identities as permissions.
 
-```json
+```json linenums="1"
 {
   "Version": "2022-07-21",
-  "Statement": [
+  "DisplayName": "PeopleBaseReader",
+  "Description": "This policy enable List and Read access to employee and timesheet of the domain people.",
+  "Type": "ACL",
+  "Allow": [
     {
-      "Sid": "hr/employee/reader",
-      "Effect": "Allow",
-      "Action": [
-        "employee:List"
-        "employee:Read"
+      "DisplayName": "hr/people/user/reader/any",
+      "Actions": [
+        "people:employee:List",
+        "people:employee:Read"
       ],
-      "Resource": "arn:hr:people::581616507495:user/*"
+      "Resources": [
+        "arn:hr:people::581616507495:user/*"
+      ]
     },
     {
-      "Sid": "hr/employee/reader",
-      "Effect": "Allow",
-      "Action": [
-        "timesheet:Read"
-        "timesheet:Create"
-        "timesheet:Update"
-        "timesheet:Delete"
+      "DisplayName": "hr/people/timesheet/writer/any",
+      "Actions": [
+        "people:timesheet:Read",
+        "people:timesheet:Create",
+        "people:timesheet:Update",
+        "people:timesheet:Delete"
       ],
-      "Resource": "arn:hr:people::581616507495:user/*"
+      "Resources": [
+        "arn:hr:people::581616507495:user/*"
+      ]
     }
   ]
 }
 ```
 
-## Third Party Integration
+## Application Integration via SDK
 
 Once everything is configured, you can go ahead with the integration into your application. 
 This can be done using a Autenticami SDK for your application language.

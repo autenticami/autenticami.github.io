@@ -2,8 +2,6 @@
 
 `Autenticami` is a multi-account `Identity and Access Managment` (IAM or IdAM) solution to enable a modern identity-based application access control for third party applications.
 
-Autenticami is inspired by AWS Identity and Access Managment (IAM) therefore policies are implemented using an AWS-like definition language.
-
 `Autenticami` allows to specify who or what can access resources by the means of fine-grained permissions.
 
 - `Who`: *Identities (Users and Roles) that can authenticate*
@@ -12,29 +10,34 @@ Autenticami is inspired by AWS Identity and Access Managment (IAM) therefore pol
 
 Below a sample policy document to grant access to the resources Employee and Timesheet of the HR Application (hr):
 
-```json
+```json linenums="1"
 {
   "Version": "2022-07-21",
-  "Statement": [
+  "DisplayName": "PeopleBaseReader",
+  "Description": "This policy enable List and Read access to employee and timesheet of the domain people.",
+  "Type": "ACL",
+  "Allow": [
     {
-      "Sid": "hr/employee/reader",
-      "Effect": "Allow",
-      "Action": [
-        "employee:List"
-        "employee:Read"
+      "DisplayName": "hr/people/user/reader/any",
+      "Actions": [
+        "people:employee:List",
+        "people:employee:Read"
       ],
-      "Resource": "arn:hr:people::581616507495:user/*"
+      "Resources": [
+        "arn:hr:people::581616507495:user/*"
+      ]
     },
     {
-      "Sid": "hr/employee/reader",
-      "Effect": "Allow",
-      "Action": [
-        "timesheet:Read"
-        "timesheet:Create"
-        "timesheet:Update"
-        "timesheet:Delete"
+      "DisplayName": "hr/people/timesheet/writer/any",
+      "Actions": [
+        "people:timesheet:Read",
+        "people:timesheet:Create",
+        "people:timesheet:Update",
+        "people:timesheet:Delete"
       ],
-      "Resource": "arn:hr:people::581616507495:user/*"
+      "Resources": [
+        "arn:hr:people::581616507495:user/*"
+      ]
     }
   ]
 }

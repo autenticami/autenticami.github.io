@@ -1,7 +1,5 @@
 # Identity Providers
 
-## Local Identity Provider
+## Internal Identity Provider
 
-## Social Federation
-
-## Enterprise Federations
+## External Identity Provider
