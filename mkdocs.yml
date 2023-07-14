@@ -54,6 +54,8 @@ nav:
           - Roles: accounts/identities/roles.md
         - Apps:
           - Applications: accounts/apps/applications.md
+          - Domains: accounts/apps/domains.md
+          - Resources: accounts/apps/resources.md
         - Access Management:
           - Permissions and Policies: accounts/access-management/permissions-policies.md
           - Policy Reference: accounts/access-management/policy-reference/index.md
