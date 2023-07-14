@@ -77,7 +77,7 @@ At this point, all that remains is to create the policies and assign them to the
   ],
   "Deny": [
     {
-      "DisplayName": "write-hr/people/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
+      "DisplayName": "deny-write-hr/people/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
       "Actions": [
         "people:timesheet:Read",
       ],

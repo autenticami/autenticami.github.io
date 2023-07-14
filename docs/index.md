@@ -42,7 +42,7 @@ Below a sample policy document to grant access to the resources Employee and Tim
   ],
   "Deny": [
     {
-      "DisplayName": "write-hr/people/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
+      "DisplayName": "deny-write-hr/people/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
       "Actions": [
         "people:timesheet:Read",
       ],
