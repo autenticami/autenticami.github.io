@@ -22,14 +22,14 @@ Once the account has been created you can proceed with the creation of applicati
 
 | APPLICATION NAME | CODE   |
 |------------------|--------|
-| HR Application   | hr-app |
+| HR Application   | hr |
 
 Once done you have to create the resources for each application's domain and for each of them create the actions.
 
 |  DOMAIN    | RESOURCE NAME | CODE             | ACTIONS                      |
 |------------|---------------|------------------|------------------------------|
-|  People    | Employee      | hr-app:employee  | Create, Update, Delete, List |
-|  People    | Timesheet     | hr-app:timesheet | Create, Update, Delete, List |
+|  People    | Employee      | hr:employee  | Create, Update, Delete, List |
+|  People    | Timesheet     | hr:timesheet | Create, Update, Delete, List |
 
 ## Create Identities
 
@@ -37,9 +37,9 @@ Naturally, it is required to create identities to access the application.
 
 | IDENTITY TYPE | ARN                                        |
 |---------------|--------------------------------------------|
-| USER          | arn:hr-app:iam::581616507495:user/john     |
-| ROLE          | arn:hr-app:iam::581616507495:role/manager  |
-| ROLE          | arn:hr-app:iam::581616507495:role/employee |
+| USER          | arn:hr:iam::581616507495:user/john     |
+| ROLE          | arn:hr:iam::581616507495:role/manager  |
+| ROLE          | arn:hr:iam::581616507495:role/employee |
 
 ## Create Permissions and Policies
 
@@ -50,16 +50,16 @@ At this point, all that remains is to create the policies and assign them to the
   "Version": "2022-07-21",
   "Statement": [
     {
-      "Sid": "hr-app/employee/reader",
+      "Sid": "hr/employee/reader",
       "Effect": "Allow",
       "Action": [
         "employee:List"
         "employee:Read"
       ],
-      "Resource": "arn:hr-app:people:employee::581616507495:user/*"
+      "Resource": "arn:hr:people:employee::581616507495:user/*"
     },
     {
-      "Sid": "hr-app/employee/reader",
+      "Sid": "hr/employee/reader",
       "Effect": "Allow",
       "Action": [
         "timesheet:Read"
@@ -67,7 +67,7 @@ At this point, all that remains is to create the policies and assign them to the
         "timesheet:Update"
         "timesheet:Delete"
       ],
-      "Resource": "arn:hr-app:people:timesheet::581616507495:user/*"
+      "Resource": "arn:hr:people:timesheet::581616507495:user/*"
     }
   ]
 }

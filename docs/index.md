@@ -11,23 +11,23 @@
 - `Can Access`: *Permissions with policies to ensure appropriate access to resources for identities*
 - `Resources`: *Resources linked to the account*
 
-Below a sample policy document to grant access to the resources Employee and Timesheet of the HR Application (hr-app):
+Below a sample policy document to grant access to the resources Employee and Timesheet of the HR Application (hr):
 
 ```json
 {
   "Version": "2022-07-21",
   "Statement": [
     {
-      "Sid": "hr-app/employee/reader",
+      "Sid": "hr/employee/reader",
       "Effect": "Allow",
       "Action": [
         "employee:List"
         "employee:Read"
       ],
-      "Resource": "arn:hr-app:people:employee::581616507495:user/*"
+      "Resource": "arn:hr:people:employee::581616507495:user/*"
     },
     {
-      "Sid": "hr-app/employee/reader",
+      "Sid": "hr/employee/reader",
       "Effect": "Allow",
       "Action": [
         "timesheet:Read"
@@ -35,7 +35,7 @@ Below a sample policy document to grant access to the resources Employee and Tim
         "timesheet:Update"
         "timesheet:Delete"
       ],
-      "Resource": "arn:hr-app:people:timesheet::581616507495:user/*"
+      "Resource": "arn:hr:people:timesheet::581616507495:user/*"
     }
   ]
 }
