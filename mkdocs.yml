@@ -50,7 +50,7 @@ nav:
           - Users and Groups: accounts/identities/users-groups.md
           - Roles: accounts/identities/roles.md
         - Apps:
-          - Apps: accounts/apps/apps.md
+          - Applications: accounts/apps/applications.md
         - Access Management:
           - Permissions and Policies: accounts/access-management/permissions-policies.md
           - Policy Reference: accounts/access-management/policy-reference/index.md

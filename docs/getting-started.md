@@ -3,7 +3,7 @@
 Let's take a third-party HR application as an example. As a developer you need to:
 
 - [Create an Account](#create-an-account)
-- [Create Apps and Resources](#create-apps-and-resources)
+- [Create Applications, Domains and Resources](create-applications-domains-and-resources)
 - [Create Identities](#create-identities)
 - [Create Permissions and Policies](#create-permissions-and-policies)
 - [Third Party Integration](#third-party-integration)
@@ -16,7 +16,7 @@ The very first step is to create an account.
 |------------------|----------------|
 | john@example.com | 581616507495   |
 
-## Create Apps and Resources
+## Create Applications, Domains and Resources
 
 Once the account has been created you can proceed with the creation of applications.
 
