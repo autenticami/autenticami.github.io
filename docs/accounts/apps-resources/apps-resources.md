@@ -10,5 +10,5 @@ For each application, you can specify a collection of tags.
 
 ## Resources
 
-A resource represents a resource from a third-party application.
+A resource represents a resource from a third-party application that are organised into domains.
 For each resource, you can specify a collection of actions and tags.

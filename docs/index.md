@@ -24,7 +24,7 @@ Below a sample policy document to grant access to the resources Employee and Tim
         "employee:List"
         "employee:Read"
       ],
-      "Resource": "arn:hr-app:employee::581616507495:user/*"
+      "Resource": "arn:hr-app:people:employee::581616507495:user/*"
     },
     {
       "Sid": "hr-app/employee/reader",
@@ -35,7 +35,7 @@ Below a sample policy document to grant access to the resources Employee and Tim
         "timesheet:Update"
         "timesheet:Delete"
       ],
-      "Resource": "arn:hr-app:timesheet::581616507495:user/*"
+      "Resource": "arn:hr-app:people:timesheet::581616507495:user/*"
     }
   ]
 }

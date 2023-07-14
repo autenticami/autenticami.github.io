@@ -24,12 +24,12 @@ Once the account has been created you can proceed with the creation of applicati
 |------------------|--------|
 | HR Application   | hr-app |
 
-Once done you have to create the resources for each application and for each of them create the actions.
+Once done you have to create the resources for each application's domain and for each of them create the actions.
 
-| RESOURCE NAME | CODE             | ACTIONS                      |
-|---------------|------------------|------------------------------|
-| Employee      | hr-app:employee  | Create, Update, Delete, List |
-| Timesheet     | hr-app:timesheet | Create, Update, Delete, List |
+|  DOMAIN    | RESOURCE NAME | CODE             | ACTIONS                      |
+|------------|---------------|------------------|------------------------------|
+|  People    | Employee      | hr-app:employee  | Create, Update, Delete, List |
+|  People    | Timesheet     | hr-app:timesheet | Create, Update, Delete, List |
 
 ## Create Identities
 
@@ -56,7 +56,7 @@ At this point, all that remains is to create the policies and assign them to the
         "employee:List"
         "employee:Read"
       ],
-      "Resource": "arn:hr-app:employee::581616507495:user/*"
+      "Resource": "arn:hr-app:people:employee::581616507495:user/*"
     },
     {
       "Sid": "hr-app/employee/reader",
@@ -67,7 +67,7 @@ At this point, all that remains is to create the policies and assign them to the
         "timesheet:Update"
         "timesheet:Delete"
       ],
-      "Resource": "arn:hr-app:timesheet::581616507495:user/*"
+      "Resource": "arn:hr-app:people:timesheet::581616507495:user/*"
     }
   ]
 }
