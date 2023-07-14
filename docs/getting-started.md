@@ -37,9 +37,9 @@ Naturally, it is required to create identities to access the application.
 
 | IDENTITY TYPE | ARN                                        |
 |---------------|--------------------------------------------|
-| USER          | arn:hr:iam::581616507495:user/john     |
-| ROLE          | arn:hr:iam::581616507495:role/manager  |
-| ROLE          | arn:hr:iam::581616507495:role/employee |
+| USER          | arn:autenticami:iam-identities:581616507495:user/john     |
+| ROLE          | arn:autenticami:iam-identities:581616507495:role/manager  |
+| ROLE          | arn:autenticami:iam-identities:581616507495:role/employee |
 
 ## Create Permissions and Policies
 
@@ -56,7 +56,7 @@ At this point, all that remains is to create the policies and assign them to the
         "employee:List"
         "employee:Read"
       ],
-      "Resource": "arn:hr:people:employee::581616507495:user/*"
+      "Resource": "arn:hr:people:581616507495:user/*"
     },
     {
       "Sid": "hr/employee/reader",
@@ -67,7 +67,7 @@ At this point, all that remains is to create the policies and assign them to the
         "timesheet:Update"
         "timesheet:Delete"
       ],
-      "Resource": "arn:hr:people:timesheet::581616507495:user/*"
+      "Resource": "arn:hr:people:581616507495:user/*"
     }
   ]
 }
