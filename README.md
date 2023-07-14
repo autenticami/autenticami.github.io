@@ -18,7 +18,7 @@ Below a sample policy document to grant access to the resources Employee and Tim
   "Type": "ACL",
   "Allow": [
     {
-      "DisplayName": "hr/people/user/reader/any",
+      "DisplayName": "allow-hr/people/user/reader/any",
       "Actions": [
         "people:employee:List",
         "people:employee:Read"
@@ -28,7 +28,7 @@ Below a sample policy document to grant access to the resources Employee and Tim
       ]
     },
     {
-      "DisplayName": "hr/people/timesheet/writer/any",
+      "DisplayName": "allow-hr/people/timesheet/writer/any",
       "Actions": [
         "people:timesheet:Read",
         "people:timesheet:Create",
@@ -42,7 +42,7 @@ Below a sample policy document to grant access to the resources Employee and Tim
   ],
   "Deny": [
     {
-      "DisplayName": "hr/people/timesheet/writer/any",
+      "DisplayName": "write-hr/people/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
       "Actions": [
         "people:timesheet:Read",
       ],
