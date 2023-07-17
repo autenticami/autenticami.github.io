@@ -3,7 +3,7 @@
 Let's take a third-party HR application as an example. As a developer you need to:
 
 - [Create an Account](#create-an-account)
-- [Create Applications, Domains and Resources](#create-applications-domains-and-resources)
+- [Create the Applicative Hierarchy](#create-the-applicative-hierarchy)
 - [Create Identities](#create-identities)
 - [Create Permissions and Policies](#create-permissions-and-policies)
 - [Application Integration via SDK](#application-integration-via-sdk)
@@ -16,20 +16,20 @@ The very first step is to create an account.
 |------------------|----------------|
 | john@example.com | 581616507495   |
 
-## Create Applications, Domains and Resources
+## Create the Applicative Hierarchy
 
 Once the account has been created you can proceed with the creation of application and its applicative hierarchy.
 
 | APPLICATION NAME | CODE   |
 |------------------|--------|
-| HR Application   | hr |
+| HR Application   | hr-app |
 
 At this stage of the development the HR application has a single domain which is `people` and it has two sub-domains:
 
 - **OrganisationManagement**: The corporate organisation management for the employees
-- **TimeManagement**: Managament of the time for the users.
+- **TimeManagement**: Time managament for the users.
 
-Morever we have a single resource which is `person` that is available on both sub-domains,
+Morever we have a single resource which is `person` that is available on both sub-domains.
 
 ### Person actions
 
@@ -104,8 +104,8 @@ At this point, all that remains is to create the policies and assign them to the
 
 ## Application Integration via SDK
 
-Once everything is configured, you can go ahead with the integration into your application. 
-This can be done using a Autenticami SDK for your application language.
+Once everything is configured, you can go ahead with the integration into your application.
+This can be done using an Autenticami SDK for your application language.
 
 Below is an example of integration in a python application with fastapi.
 
