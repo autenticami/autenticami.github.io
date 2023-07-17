@@ -20,13 +20,13 @@ Below is a sample policy document for granting access to the Employee and Timesh
   "Type": "ACL",
   "Allow": [
     {
-      "DisplayName": "allow-hr/people/user/reader/any",
+      "DisplayName": "allow-hr/people/person/reader/any",
       "Actions": [
         "people:ListEmployee",
         "people:ReadEmployee"
       ],
       "Resources": [
-        "arn:hr-app:people:organisation:explore:581616507495:user/*"
+        "arn:hr-app:people:organisation:explore:581616507495:person/*"
       ]
     },
     {
@@ -38,7 +38,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
         "people:DeleteTimesheet"
       ],
       "Resources": [
-        "arn:hr-app:people:time-management:data-entry:581616507495:user/*"
+        "arn:hr-app:people:time-management:data-entry:581616507495:person/*"
       ]
     }
   ],
@@ -49,7 +49,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
         "people:Read"
       ],
       "Resources": [
-        "arn:hr-app:people:time-management:data-entry:581616507495:user/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
+        "arn:hr-app:people:time-management:data-entry:581616507495:person/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
       ]
     }
   ]

@@ -31,6 +31,8 @@ At this stage of the development the HR application has a single domain which is
 
 Morever we have a single resource which is `person` that is available on both sub-domains,
 
+### Person actions
+
 Finally for each reasource you need to create actions and specify on which feature they do apply.
 
 | ACTION                 | ORGANISATION-MANAGEMENT | TIME-MANAGEMENT         |
@@ -48,7 +50,7 @@ Naturally, it is required to create identities to access the application.
 
 | IDENTITY TYPE | ARN                                        |
 |---------------|--------------------------------------------|
-| USER          | arn:autenticami:iam-identities::581616507495:user/john     |
+| USER          | arn:autenticami:iam-identities::581616507495:person/john     |
 | ROLE          | arn:autenticami:iam-identities::581616507495:role/manager  |
 | ROLE          | arn:autenticami:iam-identities::581616507495:role/employee |
 
@@ -64,13 +66,13 @@ At this point, all that remains is to create the policies and assign them to the
   "Type": "ACL",
   "Allow": [
     {
-      "DisplayName": "allow-hr/people/user/reader/any",
+      "DisplayName": "allow-hr/people/person/reader/any",
       "Actions": [
         "people:ListEmployee",
         "people:ReadEmployee"
       ],
       "Resources": [
-        "arn:hr-app:people:organisation:explore:581616507495:user/*"
+        "arn:hr-app:people:organisation:explore:581616507495:person/*"
       ]
     },
     {
@@ -82,7 +84,7 @@ At this point, all that remains is to create the policies and assign them to the
         "people:DeleteTimesheet"
       ],
       "Resources": [
-        "arn:hr-app:people:time-management:data-entry:581616507495:user/*"
+        "arn:hr-app:people:time-management:data-entry:581616507495:person/*"
       ]
     }
   ],
@@ -93,7 +95,7 @@ At this point, all that remains is to create the policies and assign them to the
         "people:Read"
       ],
       "Resources": [
-        "arn:hr-app:people:time-management:data-entry:581616507495:user/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
+        "arn:hr-app:people:time-management:data-entry:581616507495:person/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
       ]
     }
   ]
