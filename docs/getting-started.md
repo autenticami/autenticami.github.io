@@ -18,19 +18,29 @@ The very first step is to create an account.
 
 ## Create Applications, Domains and Resources
 
-Once the account has been created you can proceed with the creation of applications.
+Once the account has been created you can proceed with the creation of application and its applicative hierarchy.
 
 | APPLICATION NAME | CODE   |
 |------------------|--------|
 | HR Application   | hr |
 
-Once done you have to create the resources for each application's domain and for each of them create the actions.
+At this stage of the development the HR application has a single domain which is `people` and it has two sub-domains:
 
-|  DOMAIN    | RESOURCE NAME | CODE             | ACTIONS                      |
-|------------|---------------|------------------|------------------------------|
-|  People    | Employee      | hr:employee  | Create, Update, Delete, List |
-|  People    | Timesheet     | hr:timesheet | Create, Update, Delete, List |
+- **OrganisationManagement**: The corporate organisation management for the employees
+- **TimeManagement**: Managament of the time for the users.
 
+Morever we have a single resource which is `person` that is available on both sub-domains,
+
+Finally for each reasource you need to create actions and specify on which feature they do apply.
+
+| ACTION                 | ORGANISATION-MANAGEMENT | TIME-MANAGEMENT         |
+|------------------------|-------------------------|-------------------------|
+| people:ReadTimesheet   |                         | DATA-ENTRY              |
+| people:CreateTimesheet |                         | DATA-ENTRY              |
+| people:UpdateTimesheet |                         | DATA-ENTRY              |
+| people:DeleteTimesheet |                         | DATA-ENTRY              |
+| people:ListEmployee    | EXPLORE                 | DATA-ENTRY              |
+| people:ReadEmployee    | EXPLORE                 |                         |
 ## Create Identities
 
 Naturally, it is required to create identities to access the application.
@@ -59,7 +69,7 @@ At this point, all that remains is to create the policies and assign them to the
         "people:ReadEmployee"
       ],
       "Resources": [
-        "arn:hr-app:people:explore:581616507495:user/*"
+        "arn:hr-app:people:organisation:explore:581616507495:user/*"
       ]
     },
     {
@@ -71,7 +81,7 @@ At this point, all that remains is to create the policies and assign them to the
         "people:DeleteTimesheet"
       ],
       "Resources": [
-        "arn:hr-app:people:data-entry:581616507495:user/*"
+        "arn:hr-app:people:time-management:data-entry:581616507495:user/*"
       ]
     }
   ],
@@ -82,7 +92,7 @@ At this point, all that remains is to create the policies and assign them to the
         "people:Read"
       ],
       "Resources": [
-        "arn:hr-app:people:data-entry:581616507495:user/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
+        "arn:hr-app:people:time-management:data-entry:581616507495:user/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
       ]
     }
   ]

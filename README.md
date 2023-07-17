@@ -2,7 +2,7 @@
 
 `Autenticami` is a multi-account `Identity and Access Managment` (IAM or IdAM) solution to enable a modern identity-based application access control for third party applications.
 
-All you have to do is describe your application's resources and create your own access control policies. Resources are organized into hierarchies of Applications, Domains, Epics and Features.
+All you have to do is describe your application's resources and create your own access control policies. Resources are organized into hierarchies of Applications, Domains, Sub-Domains and Features.
 
 `Autenticami` allows to specify who or what can access resources by the means of fine-grained permissions:
 
@@ -26,7 +26,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
         "people:ReadEmployee"
       ],
       "Resources": [
-        "arn:hr-app:people:explore:581616507495:user/*"
+        "arn:hr-app:people:organisation:explore:581616507495:user/*"
       ]
     },
     {
@@ -38,7 +38,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
         "people:DeleteTimesheet"
       ],
       "Resources": [
-        "arn:hr-app:people:data-entry:581616507495:user/*"
+        "arn:hr-app:people:time-management:data-entry:581616507495:user/*"
       ]
     }
   ],
@@ -49,7 +49,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
         "people:Read"
       ],
       "Resources": [
-        "arn:hr-app:people:data-entry:581616507495:user/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
+        "arn:hr-app:people:time-management:data-entry:581616507495:user/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
       ]
     }
   ]
