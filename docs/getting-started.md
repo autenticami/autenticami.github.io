@@ -41,6 +41,7 @@ Finally for each reasource you need to create actions and specify on which featu
 | people:DeleteTimesheet |                         | DATA-ENTRY              |
 | people:ListEmployee    | EXPLORE                 | DATA-ENTRY              |
 | people:ReadEmployee    | EXPLORE                 |                         |
+
 ## Create Identities
 
 Naturally, it is required to create identities to access the application.
