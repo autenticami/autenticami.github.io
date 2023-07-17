@@ -54,8 +54,9 @@ nav:
     - Roles: accounts/identities/roles.md
   - Applications:
     - Applications: accounts/applications/applications.md
-    - Domains: accounts/applications/domains.md
+    - Applicative Hierarchies: accounts/applications/applicative-hierarchies.md
     - Resources: accounts/applications/resources.md
+    - Actions: accounts/applications/actions.md
   - Access Management:
     - Permissions and Policies: accounts/access-management/permissions-policies.md
     - Policy Reference: accounts/access-management/policy-reference/index.md
