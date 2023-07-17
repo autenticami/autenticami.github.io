@@ -55,23 +55,23 @@ At this point, all that remains is to create the policies and assign them to the
     {
       "DisplayName": "allow-hr/people/user/reader/any",
       "Actions": [
-        "people:employee:List",
-        "people:employee:Read"
+        "people:organisation:ListEmployee",
+        "people:organisation:employee:ReadEmployee"
       ],
       "Resources": [
-        "arn:hr:people::581616507495:user/*"
+        "arn:hr-app:people:organisation:explore:581616507495:user/*"
       ]
     },
     {
       "DisplayName": "allow-hr/people/timesheet/writer/any",
       "Actions": [
-        "people:timesheet:Read",
-        "people:timesheet:Create",
-        "people:timesheet:Update",
-        "people:timesheet:Delete"
+        "people:time-tracking:ReadTimesheet",
+        "people:time-tracking:CreateTimesheet",
+        "people:time-tracking:UpdateTimesheet",
+        "people:time-tracking:DeleteTimesheet"
       ],
       "Resources": [
-        "arn:hr:people::581616507495:user/*"
+        "arn:hr-app:people:time-tracking:data-entry:581616507495:user/*"
       ]
     }
   ],
@@ -79,10 +79,10 @@ At this point, all that remains is to create the policies and assign them to the
     {
       "DisplayName": "deny-write-hr/people/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
       "Actions": [
-        "people:timesheet:Read",
+        "people:time-tracking:Read"
       ],
       "Resources": [
-        "arn:hr:people::581616507495:user/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
+        "arn:hr-app:people:time-tracking:data-entry:581616507495:user/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
       ]
     }
   ]

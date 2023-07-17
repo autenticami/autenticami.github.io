@@ -2,13 +2,15 @@
 
 `Autenticami` is a multi-account `Identity and Access Managment` (IAM or IdAM) solution to enable a modern identity-based application access control for third party applications.
 
-`Autenticami` allows to specify who or what can access resources by the means of fine-grained permissions.
+All you have to do is describe your application's resources and create your own access control policies. Resources are organized in hierarchies of Applications and Domains.
+
+`Autenticami` allows to specify who or what can access resources by the means of fine-grained permissions:
 
 - `Who`: *Identities (Users and Roles) that can authenticate*
-- `Can Access`: *Permissions with policies to ensure appropriate access to resources for identities*
-- `Resources`: *Resources linked to the account*
+- `Can Access`: *Permissions granted by policies to affect resources using actions*
+- `Resources`: *Resources described into the account*
 
-Below a sample policy document to grant access to the resources Employee and Timesheet of the HR Application (hr):
+Below is a sample policy document for granting access to the Employee and Timesheet resources of the HR (hr) application:
 
 ```json linenums="1"
 {
@@ -20,23 +22,23 @@ Below a sample policy document to grant access to the resources Employee and Tim
     {
       "DisplayName": "allow-hr/people/user/reader/any",
       "Actions": [
-        "people:employee:List",
-        "people:employee:Read"
+        "people:organisation:ListEmployee",
+        "people:organisation:employee:ReadEmployee"
       ],
       "Resources": [
-        "arn:hr:people::581616507495:user/*"
+        "arn:hr-app:people:organisation:explore:581616507495:user/*"
       ]
     },
     {
       "DisplayName": "allow-hr/people/timesheet/writer/any",
       "Actions": [
-        "people:timesheet:Read",
-        "people:timesheet:Create",
-        "people:timesheet:Update",
-        "people:timesheet:Delete"
+        "people:time-tracking:ReadTimesheet",
+        "people:time-tracking:CreateTimesheet",
+        "people:time-tracking:UpdateTimesheet",
+        "people:time-tracking:DeleteTimesheet"
       ],
       "Resources": [
-        "arn:hr:people::581616507495:user/*"
+        "arn:hr-app:people:time-tracking:data-entry:581616507495:user/*"
       ]
     }
   ],
@@ -44,10 +46,10 @@ Below a sample policy document to grant access to the resources Employee and Tim
     {
       "DisplayName": "deny-write-hr/people/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
       "Actions": [
-        "people:timesheet:Read",
+        "people:time-tracking:Read"
       ],
       "Resources": [
-        "arn:hr:people::581616507495:user/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
+        "arn:hr-app:people:time-tracking:data-entry:581616507495:user/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
       ]
     }
   ]
