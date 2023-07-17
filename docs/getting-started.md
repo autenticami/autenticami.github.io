@@ -109,13 +109,13 @@ This can be done using a Autenticami SDK for your application language.
 
 Below is an example of integration in a python application with fastapi.
 
-```python
+``` py linenums="1" hl_lines="17 18"
 @router.get(
     '/employees',
     response_model=list[DTOEmployeeResponse],
     response_description='Get all employees',
     status_code=status.HTTP_200_OK,
-    tags=['hr'],
+    tags=['hr-app'],
 )
 async def get_employees(
    
