@@ -41,7 +41,7 @@ Finally for each reasource you need to create actions and specify on which featu
 | people:CreateTimesheet |                         | DATA-ENTRY              |
 | people:UpdateTimesheet |                         | DATA-ENTRY              |
 | people:DeleteTimesheet |                         | DATA-ENTRY              |
-| people:ListEmployee    | EXPLORE                 | DATA-ENTRY              |
+| people:ListEmployee    | EXPLORE                 |                         |
 | people:ReadEmployee    | EXPLORE                 |                         |
 
 ## Create Identities
