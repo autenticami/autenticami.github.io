@@ -20,7 +20,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
   "Type": "ACL",
   "Allow": [
     {
-      "DisplayName": "allow-hr/people/person/reader/any",
+      "DisplayName": "allow-hr/person/reader/any",
       "Actions": [
         "people:ListEmployee",
         "people:ReadEmployee"
@@ -30,7 +30,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
       ]
     },
     {
-      "DisplayName": "allow-hr/people/timesheet/writer/any",
+      "DisplayName": "allow-hr/timesheet/writer/any",
       "Actions": [
         "people:ReadTimesheet",
         "people:CreateTimesheet",
@@ -44,7 +44,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
   ],
   "Deny": [
     {
-      "DisplayName": "deny-write-hr/people/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
+      "DisplayName": "deny-write-hr/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
       "Actions": [
         "people:Read"
       ],
