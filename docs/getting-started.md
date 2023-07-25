@@ -24,12 +24,12 @@ Once the account has been created you can proceed with the creation of applicati
 |------------------|--------|
 | HR Application   | hr-app |
 
-At this stage of the development the HR application has a single domain which is `people` and it has two sub-domains:
+At this stage of the development the HR application has two domains:
 
 - **OrganisationManagement**: The corporate organisation management for the employees
 - **TimeManagement**: Time managament for the users.
 
-Morever we have a single resource which is `person` that is available on both sub-domains.
+Morever we have a single resource which is `person` that is available on both domains.
 
 ### Person actions
 
@@ -72,7 +72,7 @@ At this point, all that remains is to create the policies and assign them to the
         "people:ReadEmployee"
       ],
       "Resources": [
-        "arn:hr-app:people:organisation:explore:581616507495:person/*"
+        "arn:hr-app:organisation:explore:581616507495:person/*"
       ]
     },
     {
@@ -84,7 +84,7 @@ At this point, all that remains is to create the policies and assign them to the
         "people:DeleteTimesheet"
       ],
       "Resources": [
-        "arn:hr-app:people:time-management:data-entry:581616507495:person/*"
+        "arn:hr-app:time-management:data-entry:581616507495:person/*"
       ]
     }
   ],
@@ -95,7 +95,7 @@ At this point, all that remains is to create the policies and assign them to the
         "people:Read"
       ],
       "Resources": [
-        "arn:hr-app:people:time-management:data-entry:581616507495:person/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
+        "arn:hr-app:time-management:data-entry:581616507495:person/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
       ]
     }
   ]
