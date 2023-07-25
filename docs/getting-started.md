@@ -48,11 +48,11 @@ Finally for each reasource you need to create actions and specify on which featu
 
 Naturally, it is required to create identities to access the application.
 
-| IDENTITY TYPE | ARN                                        |
-|---------------|--------------------------------------------|
-| USER          | arn:autenticami:iam-identities::581616507495:person/john     |
-| ROLE          | arn:autenticami:iam-identities::581616507495:role/manager  |
-| ROLE          | arn:autenticami:iam-identities::581616507495:role/employee |
+| IDENTITY TYPE | ARN                                                         |
+|---------------|-------------------------------------------------------------|
+| USER          | arn:autenticami:iam-identities::581616507495:person/john    |
+| ROLE          | arn:autenticami:iam-identities::581616507495:role/manager   |
+| ROLE          | arn:autenticami:iam-identities::581616507495:role/employee  |
 
 ## Create Permissions and Policies
 
