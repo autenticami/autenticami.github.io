@@ -1,5 +1,10 @@
 version: 1
 workspace:
-  id: af9eedfc834844f98f76d262876ef7d8
+  id: 0a1cc4136c9b4fd4a8c89bf39f681868
   name: autenticami.github.io
 commands:
+  - name: serve
+    description: Serve the documentation
+    steps:
+      - scripts:
+          - hatch -e docs run serve
