@@ -1,12 +1,16 @@
 # Permissions and Policies
 
-Autenticami allows for the creation of `Policies` to ensure that the correct identity has the appropriate access to resources.
+Autenticami allows for the creation of `Policies` to ensure that the correct identity has the appropriate permissions to access resources.
 
 In particular policies are `Identity-based policies` as they can be attached only to identities.
 
-There are two types of policy documents:
+`Policies` are implemented in the form of documents that define a list of [policy statements](#policy-statement) that can be allowed or denied.
 
-- [Principal Trust Identity Policy](#permissions-policies/#principal-trust-identity-policy)
+It is possible to divide the policies into several documents and these will be aggregated during the evaluation phase
+
+There are two types of policies:
+
+- [Principal Trust Identity Policy](#principal-trust-identity-policy)
 - [Access Control List Policy](#access-control-list-policy)
 
 ## Principal Trust Identity Policy
@@ -15,7 +19,7 @@ A `Principal Trust Identit Policy (TRUST)` defines which principal can assume th
 
 ## Access Control List Policy
 
-An `Access Control List Policy (ACL)` is implemented as a document listing the actions that can/cannot be performed and the resourcers those actions can affect.
+An `Access Control List Policy (ACL)` lists the actions that can/cannot be performed and the resourcers those actions can affect.
 
 !!! info "INFO"
     Identities are themselves resources that can be target of `policies` actions.
@@ -32,3 +36,7 @@ A collection of policies can be referred as `Permissions`. There are two types o
 
 - **Inline**: permissions implemented inline to the definition of the identity
 - **Managed**: permissions implemented and managed outside the identity, so they can be shared across multiple identities.
+
+## Policy Statement
+
+A policy statment list acctions associated to resources.

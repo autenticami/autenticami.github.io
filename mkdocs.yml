@@ -59,7 +59,7 @@ nav:
     - Actions: accounts/applications/actions.md
   - Access Management:
     - Permissions and Policies: accounts/access-management/permissions-policies.md
-    - Policy Reference: accounts/access-management/policy-reference/index.md
+    - Policies Reference: accounts/access-management/policies-reference/index.md
 - Authenticate:
   - Authentication: authenticate/authentication-providers/authentication.md
   - Provision Users:
