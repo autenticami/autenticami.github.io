@@ -39,4 +39,4 @@ A collection of policies can be referred as `Permissions`. There are two types o
 
 ## Policy Statement
 
-A policy statment list acctions associated to resources.
+A policy statement list acctions associated to resources.
