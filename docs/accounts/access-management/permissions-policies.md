@@ -34,10 +34,10 @@ Policies enable two types of permission-based access control:
 !!! info "INFO"
     Autenticami implements a Least-Privilege Model, hence an identity can't access anything until permissions are granted.
 
-There are two types of permissions:
+There are two types of policies:
 
-- **Inline**: permissions implemented inline to the definition of the identity
-- **Managed**: permissions implemented and managed outside the identity, so they can be shared across multiple identities.
+- **Inline**: policies associated inline to the definition of the identity
+- **Managed**: policies associated and managed outside the identity, so they can be shared across multiple identities.
 
 ## Policy Statement
 
