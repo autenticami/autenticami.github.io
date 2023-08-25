@@ -50,7 +50,7 @@ Naturally, it is required to create identities to access the application.
 
 | IDENTITY TYPE | ARN                                                         |
 |---------------|-------------------------------------------------------------|
-| USER          | arn:autenticami:iam-identities::581616507495:person/john    |
+| USER          | arn:autenticami:iam-identities::581616507495:people/john    |
 | ROLE          | arn:autenticami:iam-identities::581616507495:role/manager   |
 | ROLE          | arn:autenticami:iam-identities::581616507495:role/employee  |
 
@@ -72,7 +72,7 @@ At this point, all that remains is to create the policies and assign them to the
         "people:ReadEmployee"
       ],
       "Resources": [
-        "arn:hr-app:organisation:explore:581616507495:person/*"
+        "arn:hr-app:organisation:explore:581616507495:people/*"
       ]
     },
     {
@@ -84,7 +84,7 @@ At this point, all that remains is to create the policies and assign them to the
         "people:DeleteTimesheet"
       ],
       "Resources": [
-        "arn:hr-app:time-management:data-entry:581616507495:person/*"
+        "arn:hr-app:time-management:data-entry:581616507495:people/*"
       ]
     }
   ],
@@ -95,7 +95,7 @@ At this point, all that remains is to create the policies and assign them to the
         "people:Read"
       ],
       "Resources": [
-        "arn:hr-app:time-management:data-entry:581616507495:person/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
+        "arn:hr-app:time-management:data-entry:581616507495:people/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
       ]
     }
   ]

@@ -26,7 +26,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
         "people:ReadEmployee"
       ],
       "Resources": [
-        "arn:hr-app:organisation:explore:581616507495:person/*"
+        "arn:hr-app:organisation:explore:581616507495:people/*"
       ]
     },
     {
@@ -38,7 +38,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
         "people:DeleteTimesheet"
       ],
       "Resources": [
-        "arn:hr-app:time-management:data-entry:581616507495:person/*"
+        "arn:hr-app:time-management:data-entry:581616507495:people/*"
       ]
     }
   ],
@@ -49,7 +49,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
         "people:Read"
       ],
       "Resources": [
-        "arn:hr-app:time-management:data-entry:581616507495:person/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
+        "arn:hr-app:time-management:data-entry:581616507495:people/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
       ]
     }
   ]
