@@ -1,6 +1,6 @@
 # Permissions and Policies
 
-Autenticami allows for the creation of `Policies` to ensure that the correct identity has the appropriate permissions to access resources.
+Autenticami allows the creation of `Policies` that can be associated with an identity to ensure that it has the proper permissions to access resources.
 
 In particular policies are `Identity-based policies` as they can be attached only to identities.
 
@@ -24,15 +24,17 @@ An `Access Control List Policy (ACL)` lists the actions that can/cannot be perfo
 !!! info "INFO"
     Identities are themselves resources that can be target of `policies` actions.
 
-Policies enable two types of access control:
+`Permissions` allow identities to access a resource or execute a specific action and they are granted through the association of policies.
 
-- **Role-Based access control (RBAC)**: Defines permissions based on role. For each identity, the collections of policies are listed.
-- **Attribute-based access control (ABAC)**: Define permissions based on attributes on resources. Each identity is associated with one or more tags and automatically has access to all resources that belong to the same tags.
+Policies enable two types of permission-based access control:
+
+- **Role-Based access control (RBAC)**: Permission-based on role. For each identity, the collections of policies are listed.
+- **Attribute-based access control (ABAC)**: Permission-based on resource attributes. Each identity is associated with one or more tags and automatically has access to all resources that belong to the same tags.
 
 !!! info "INFO"
     Autenticami implements a Least-Privilege Model, hence an identity can't access anything until permissions are granted.
 
-A collection of policies can be referred as `Permissions`. There are two types of permissions:
+There are two types of permissions:
 
 - **Inline**: permissions implemented inline to the definition of the identity
 - **Managed**: permissions implemented and managed outside the identity, so they can be shared across multiple identities.

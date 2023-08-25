@@ -7,7 +7,7 @@ All you have to do is describe your application's resources and create your own 
 `Autenticami` allows to specify who or what can access resources by the means of fine-grained permissions:
 
 - `Who`: *Identities (Users and Roles) that can authenticate*
-- `Can Access`: *Permissions granted by policies to affect resources using actions*
+- `Can Access`: *Permissions to affect resources using actions, those are granted by attaching policies*
 - `Resources`: *Resources described into the account*
 
 Below is a sample policy document for granting access to the Employee and Timesheet resources of the HR application (hr-app):

@@ -56,7 +56,7 @@ Naturally, it is required to create identities to access the application.
 
 ## Create Permissions and Policies
 
-At this point, all that remains is to create the policies and assign them to the identities as permissions.
+At this point, all that remains is to grant the permissions by creating policies and assigning them to the identities.
 
 ```json linenums="1"
 {
