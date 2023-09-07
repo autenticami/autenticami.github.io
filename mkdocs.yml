@@ -22,16 +22,6 @@ theme:
     scheme: slate
     primary: black
     accent: black
-    toggle:
-      icon: material/weather-night
-      name: Switch to light mode
-  - media: "(prefers-color-scheme: light)"
-    scheme: default
-    primary: black
-    accent: black
-    toggle:
-      icon: material/weather-sunny
-      name: Switch to dark mode
   features:
   - navigation.sections
   - navigation.expand
