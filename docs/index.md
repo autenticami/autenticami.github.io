@@ -1,5 +1,10 @@
 # Autenticami
 
+<div style="background-color:#111111;text-align:justify;}">
+  <img src="assets/images/autenticami-black-logo.png" width="250px" height="auto"/>
+</div>
+
+
 `Autenticami` is a multi-account `Identity and Access Management` (IAM or IdAM) solution to enable a modern identity-based application access control for third party applications.
 
 All you have to do is describe your application's resources and create your own access control policies. Resources are organized into hierarchies of Applications, Domains and Features.

@@ -12,23 +12,23 @@ theme:
   name: material
   custom_dir: docs/.overrides
   language: en
-  favicon: assets/images/logo.jpg
-  #logo: assets/images/logo.jpg
+  favicon: assets/images/autenticami-icon-logo.png
+  logo: assets/images/autenticami-icon-logo.png
   font:
     text: Roboto
     code: Roboto Mono
   palette:
   - media: "(prefers-color-scheme: dark)"
     scheme: slate
-    primary: pink
-    accent: pink
+    primary: black
+    accent: black
     toggle:
       icon: material/weather-night
       name: Switch to light mode
   - media: "(prefers-color-scheme: light)"
     scheme: default
-    primary: pink
-    accent: pink
+    primary: black
+    accent: black
     toggle:
       icon: material/weather-sunny
       name: Switch to dark mode
