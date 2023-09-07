@@ -1,7 +1,7 @@
 # Autenticami
 
 <div style="background-color:#111111;text-align:justify;}">
-  <img src="assets/images/autenticami-black-logo.png" width="250px" height="auto"/>
+  <img src="docs/assets/images/autenticami-black-logo.png" width="250px" height="auto"/>
 </div>
 
 `Autenticami` is a multi-account `Identity and Access Management` (IAM or IdAM) solution to enable a modern identity-based application access control for third party applications.
