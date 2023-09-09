@@ -37,7 +37,7 @@ nav:
   - index.md
   - Getting Started: getting-started.md
 - Accounts:
-  - accounts/account.md
+  - accounts/accounts.md
   - Identities:
     - accounts/identities/identities.md
     - Users and Groups: accounts/identities/users-groups.md
@@ -70,7 +70,8 @@ nav:
 - Console & Endpoints:
   - Management Console: console-endpoints/console.md
   - Endpoints: console-endpoints/endpoints.md
-- SDKs: sdks/index.md
+- SDKs:
+  - sdks/index.md
 
 # watch:
 plugins:
