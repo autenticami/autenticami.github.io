@@ -1,4 +1,4 @@
-# References
+# RFCs
 
 ## JavaScript Object Signing and Encryption (JOSE)
 
@@ -12,13 +12,3 @@
 | [JSON Web Token Claims](https://www.iana.org/assignments/jwt/jwt.xhtml#claims)                        | LINK |
 | [JSON Web Token (JWT) Profile for OAuth 2.0 Access Tokens](https://datatracker.ietf.org/doc/rfc9068/) | LINK |
 | [JSON Object Signing and Encryption (JOSE)](https://www.iana.org/assignments/jose/jose.xhtml)         | LINK |
-
-## Useful JWT Tools
-
-| LINK                                                                  | TYPE |
-|-----------------------------------------------------------------------|------|
-| [jwt.io](https://jwt.io/)                                             | TOOL |
-| [jwt.ms](https://jwt.ms/)                                             | TOOL |
-| [github.com/gchq/CyberChef](https://github.com/gchq/CyberChef)        | CODE |
-| [github.com/gchq/CyberChef Demo](https://gchq.github.io/CyberChef/)   | TOOL |
-| [scottbrady91.com/tools/jwt](https://www.scottbrady91.com/tools/jwt)  | TOOL |

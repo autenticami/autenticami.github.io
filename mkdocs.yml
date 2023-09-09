@@ -47,9 +47,6 @@ nav:
     - Applicative Hierarchies: accounts/applications/applicative-hierarchies.md
     - Resources: accounts/applications/resources.md
     - Actions: accounts/applications/actions.md
-  - Access Management:
-    - Permissions and Policies: accounts/access-management/permissions-policies.md
-    - Policies Reference: accounts/access-management/policies-reference/index.md
 - Authenticate:
   - Authentication: authenticate/authentication-providers/authentication.md
   - Provision Users:
@@ -61,11 +58,19 @@ nav:
       - ID Token: secure/protect-your-resources/tokens/id-token/index.md
       - Access Token: secure/protect-your-resources/tokens/access-token/index.md
       - Refresh Token: secure/protect-your-resources/tokens/refresh-token/index.md
+  - References: 
+    - RFCs: secure/reference/rfcs.md
+    - Tools: secure/reference/tools.md
+- Access Management:
+  - Permissions and Policies: 
+      - Policies: access-management/policies.md
+  - Reference: 
+      - Policies: 
+        - Json Elements: access-management/reference/policies/json-elements.md
 - Console & Endpoints:
   - Management Console: console-endpoints/console.md
   - Endpoints: console-endpoints/endpoints.md
-- Troubleshoot: troubleshoot/index.md
-- References: references.md
+- SDKs: sdks/index.md
 
 # watch:
 plugins:
@@ -90,6 +95,8 @@ plugins:
 
 markdown_extensions:
 # Built-in
+- attr_list
+- md_in_html
 - markdown.extensions.abbr:
 - markdown.extensions.admonition:
 - markdown.extensions.attr_list:

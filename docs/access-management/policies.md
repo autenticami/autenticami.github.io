@@ -1,4 +1,4 @@
-# Permissions and Policies
+# Policies
 
 Autenticami allows the creation of `Policies` that can be associated with an identity to ensure that it has the proper permissions to access resources.
 
