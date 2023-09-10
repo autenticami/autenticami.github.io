@@ -16,6 +16,7 @@ The very first step is to create an account.
 |------------------|----------------|
 | john@example.com | 581616507495   |
 
+
 ## Create the Applicative Hierarchy
 
 Once the account has been created you can proceed with the creation of application and its applicative hierarchy.
