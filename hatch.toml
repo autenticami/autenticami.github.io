@@ -4,7 +4,7 @@ dependencies = [
   "jinja2~=3.1",
   "markdown~=3.4",
   "mkdocs~=1.5.2",
-  "mkdocs-material-extensions~=1.1",
+  "mkdocs-material~=9.2.8",
   # Plugins
   "mkdocs-minify-plugin~=0.7.1",
   "mkdocs-git-revision-date-localized-plugin~=1.2.0",
@@ -22,12 +22,6 @@ dependencies = [
   # Validation
   # https://github.com/linkchecker/linkchecker/pull/669#issuecomment-1267236287
   "linkchecker @ git+https://github.com/linkchecker/linkchecker.git@d9265bb71c2054bf57b8c5734a4825d62505c779",
-  # Requirements for plugins
-  "babel~=2.12",
-  "colorama~=0.4",
-  "paginate~=0.5",
-  "regex~=2023.8",
-  "requests~=2.31"
 ]
 pre-install-commands = [
   "python scripts/install_mkdocs_material_insiders.py",
