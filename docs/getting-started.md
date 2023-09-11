@@ -61,12 +61,12 @@ At this point, all that remains is to grant the permissions by creating policies
 ```json linenums="1"
 {
   "Version": "2022-07-21",
-  "DisplayName": "PeopleBaseReader",
+  "Label": "PeopleBaseReader",
   "Description": "This policy enable List and Read access to employee and timesheet of the domain people.",
   "Type": "ACL",
   "Allow": [
     {
-      "DisplayName": "allow-hr/person/reader/any",
+      "Label": "allow-hr/person/reader/any",
       "Actions": [
         "people:ListEmployee",
         "people:ReadEmployee"
@@ -76,7 +76,7 @@ At this point, all that remains is to grant the permissions by creating policies
       ]
     },
     {
-      "DisplayName": "allow-hr/timesheet/writer/any",
+      "Label": "allow-hr/timesheet/writer/any",
       "Actions": [
         "people:ReadTimesheet",
         "people:CreateTimesheet",
@@ -90,7 +90,7 @@ At this point, all that remains is to grant the permissions by creating policies
   ],
   "Deny": [
     {
-      "DisplayName": "deny-write-hr/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
+      "Label": "deny-write-hr/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
       "Actions": [
         "people:Read"
       ],
