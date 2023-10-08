@@ -24,7 +24,7 @@ An `Access Control List Policy (ACL)` lists the actions that can/cannot be perfo
 !!! info "INFO"
     Identities are themselves resources that can be target of `policies` actions.
 
-`Permissions` allow identities to access a resource or execute a specific action and they are granted through the association of policies.
+`Permissions` permit identities to access a resource or execute a specific action and they are granted through the association of policies.
 
 Policies enable two types of permission-based access control:
 

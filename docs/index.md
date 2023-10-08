@@ -23,35 +23,35 @@ Below is a sample policy document for granting access to the Employee and Timesh
   "Label": "PeopleBaseReader",
   "Description": "This policy enable List and Read access to employee and timesheet of the domain people.",
   "Type": "ACL",
-  "Allow": [
+  "Permit": [
     {
-      "Label": "allow-hr/person/reader/any",
+      "Label": "permit-hr/person/reader/any",
       "Actions": [
-        "people:ListEmployee",
-        "people:ReadEmployee"
+        "organisation/people:ListEmployee",
+        "organisation/people:ReadEmployee"
       ],
       "Resources": [
         "arn:hr-app:organisation:explore:581616507495:people/*"
       ]
     },
     {
-      "Label": "allow-hr/timesheet/writer/any",
+      "Label": "permit-hr/timesheet/writer/any",
       "Actions": [
-        "people:ReadTimesheet",
-        "people:CreateTimesheet",
-        "people:UpdateTimesheet",
-        "people:DeleteTimesheet"
+        "time-management/people:ReadTimesheet",
+        "time-management/people:CreateTimesheet",
+        "time-management/people:UpdateTimesheet",
+        "time-management/people:DeleteTimesheet"
       ],
       "Resources": [
         "arn:hr-app:time-management:data-entry:581616507495:people/*"
       ]
     }
   ],
-  "Deny": [
+  "Forbid": [
     {
-      "Label": "deny-write-hr/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
+      "Label": "forbid-write-hr/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
       "Actions": [
-        "people:Read"
+        "time-management/people:Read"
       ],
       "Resources": [
         "arn:hr-app:time-management:data-entry:581616507495:people/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
