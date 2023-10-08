@@ -41,8 +41,8 @@ Finally for each reasource you need to create actions and specify on which featu
 | time-management/people:CreateTimesheet |                         | DATA-ENTRY              |
 | time-management/people:UpdateTimesheet |                         | DATA-ENTRY              |
 | time-management/people:DeleteTimesheet |                         | DATA-ENTRY              |
-| time-management/people:ListEmployee    | EXPLORE                 |                         |
-| time-management/people:ReadEmployee    | EXPLORE                 |                         |
+| organisation/people:ListEmployee       | EXPLORE                 |                         |
+| organisation/people:ReadEmployee       | EXPLORE                 |                         |
 
 ## Create Identities
 
