@@ -37,22 +37,22 @@ Finally for each reasource you need to create actions and specify on which featu
 
 | ACTION                                 | ORGANISATION-MANAGEMENT | TIME-MANAGEMENT         |
 |----------------------------------------|-------------------------|-------------------------|
-| time-management/people:ReadTimesheet   |                         | DATA-ENTRY              |
-| time-management/people:CreateTimesheet |                         | DATA-ENTRY              |
-| time-management/people:UpdateTimesheet |                         | DATA-ENTRY              |
-| time-management/people:DeleteTimesheet |                         | DATA-ENTRY              |
-| organisation/people:ListEmployee       | EXPLORE                 |                         |
-| organisation/people:ReadEmployee       | EXPLORE                 |                         |
+| people:ReadTimesheet   |                         | DATA-ENTRY              |
+| people:CreateTimesheet |                         | DATA-ENTRY              |
+| people:UpdateTimesheet |                         | DATA-ENTRY              |
+| people:DeleteTimesheet |                         | DATA-ENTRY              |
+| people:ListEmployee       | EXPLORE                 |                         |
+| people:ReadEmployee       | EXPLORE                 |                         |
 
 ## Create Identities
 
 Naturally, it is required to create identities to access the application.
 
-| IDENTITY TYPE | ARN                                                         |
+| IDENTITY TYPE | UUR                                                         |
 |---------------|-------------------------------------------------------------|
-| USER          | arn:autenticami:iam-identities::581616507495:people/john    |
-| ROLE          | arn:autenticami:iam-identities::581616507495:role/manager   |
-| ROLE          | arn:autenticami:iam-identities::581616507495:role/employee  |
+| USER          | uur:autenticami:iam-identities::581616507495:people/john    |
+| ROLE          | uur:autenticami:iam-identities::581616507495:role/manager   |
+| ROLE          | uur:autenticami:iam-identities::581616507495:role/employee  |
 
 ## Create Permissions and Policies
 
@@ -68,23 +68,23 @@ At this point, all that remains is to grant the permissions by creating policies
     {
       "Label": "permit-hr/person/reader/any",
       "Actions": [
-        "organisation/people:ListEmployee",
-        "organisation/people:ReadEmployee"
+        "people:ListEmployee",
+        "people:ReadEmployee"
       ],
       "Resources": [
-        "arn:hr-app:organisation:explore:581616507495:people/*"
+        "uur:hr-app:organisation:explore:581616507495:people/*"
       ]
     },
     {
       "Label": "permit-hr/timesheet/writer/any",
       "Actions": [
-        "time-management/people:ReadTimesheet",
-        "time-management/people:CreateTimesheet",
-        "time-management/people:UpdateTimesheet",
-        "time-management/people:DeleteTimesheet"
+        "people:ReadTimesheet",
+        "people:CreateTimesheet",
+        "people:UpdateTimesheet",
+        "people:DeleteTimesheet"
       ],
       "Resources": [
-        "arn:hr-app:time-management:data-entry:581616507495:people/*"
+        "uur:hr-app:time-management:data-entry:581616507495:people/*"
       ]
     }
   ],
@@ -92,10 +92,10 @@ At this point, all that remains is to grant the permissions by creating policies
     {
       "Label": "forbid-write-hr/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
       "Actions": [
-        "time-management/people:Read"
+        "people:Read"
       ],
       "Resources": [
-        "arn:hr-app:time-management:data-entry:581616507495:people/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
+        "uur:hr-app:time-management:data-entry:581616507495:people/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
       ]
     }
   ]
