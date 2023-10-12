@@ -33,7 +33,7 @@ Morever we have a single resource which is `person` that is available on both do
 
 ### Person actions
 
-Finally for each reasource you need to create actions and specify on which feature they do apply.
+Finally for each reasource you need to create actions.
 
 | ACTION                                 | ORGANISATION-MANAGEMENT | TIME-MANAGEMENT         |
 |----------------------------------------|-------------------------|-------------------------|

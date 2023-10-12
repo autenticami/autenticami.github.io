@@ -1,6 +1,6 @@
 # Actions
 
-Actions are operations that can affect more than one resource in the context of one or more features.
+Actions are operations that can affect more than one resource.
 
 Actions must be uniquely identified and they look like `people:CreateTimesheet`.
 
