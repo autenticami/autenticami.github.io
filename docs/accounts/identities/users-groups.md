@@ -4,7 +4,7 @@
 
 ## Users
 
-A `User` is an identity representing a single person or application that has specific permissions.
+A `User` is an identity representing a single person or project that has specific permissions.
 
 Both temporary and permanent credentials can be granted to a user.
 

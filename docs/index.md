@@ -5,9 +5,9 @@
 </div>
 
 
-`Autenticami` is a multi-account `Identity and Access Management` (IAM or IdAM) solution to enable a modern identity-based application access control for third party applications.
+`Autenticami` is a multi-account `Identity and Access Management` (IAM or IdAM) solution to enable a modern identity-based project access control for third party projects.
 
-All you have to do is describe your application's resources and create your own access control policies. Resources are organized into hierarchies of Applications and Domains.
+All you have to do is describe your project's resources and create your own access control policies. Resources are organized into hierarchies of Applications and Domains.
 
 `Autenticami` allows to specify who or what can access resources by the means of fine-grained permissions:
 
@@ -15,7 +15,7 @@ All you have to do is describe your application's resources and create your own 
 - `Can Access`: *Permissions to affect resources using actions, those are granted by attaching policies*
 - `Resources`: *Resources described into the account*
 
-Below is a sample policy document for granting access to the Employee and Timesheet resources of the HR application (hr-app):
+Below is a sample policy document for granting access to the Employee and Timesheet resources of the HR project (hr-app):
 
 ```json linenums="1"
 {

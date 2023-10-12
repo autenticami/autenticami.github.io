@@ -1,12 +1,12 @@
 # Getting Started
 
-Let's take a third-party HR application as an example. As a developer you need to:
+Let's take a third-party HR project as an example. As a developer you need to:
 
 - [Create an Account](#create-an-account)
 - [Create the Applicative Hierarchy](#create-the-applicative-hierarchy)
 - [Create Identities](#create-identities)
 - [Create Permissions and Policies](#create-permissions-and-policies)
-- [Application Integration via SDK](#application-integration-via-sdk)
+- [Application Integration via SDK](#project-integration-via-sdk)
 
 ## Create an Account
 
@@ -18,13 +18,13 @@ The very first step is to create an account.
 
 ## Create the Applicative Hierarchy
 
-Once the account has been created you can proceed with the creation of application and its applicative hierarchy.
+Once the account has been created you can proceed with the creation of project and its applicative hierarchy.
 
 | APPLICATION NAME | CODE   |
 |------------------|--------|
 | HR Application   | hr-app |
 
-At this stage of the development the HR application has two domains:
+At this stage of the development the HR project has two domains:
 
 - **OrganisationManagement**: The corporate organisation management for the employees
 - **TimeManagement**: Time managament for the users.
@@ -46,7 +46,7 @@ Finally for each reasource you need to create actions.
 
 ## Create Identities
 
-Naturally, it is required to create identities to access the application.
+Naturally, it is required to create identities to access the project.
 
 | IDENTITY TYPE | UUR                                                         |
 |---------------|-------------------------------------------------------------|
@@ -104,10 +104,10 @@ At this point, all that remains is to grant the permissions by creating policies
 
 ## Application Integration via SDK
 
-Once everything is configured, you can go ahead with the integration into your application.
-This can be done using an Autenticami SDK for your application language.
+Once everything is configured, you can go ahead with the integration into your project.
+This can be done using an Autenticami SDK for your project language.
 
-Below is an example of integration in a python application with fastapi.
+Below is an example of integration in a python project with fastapi.
 
 ``` py linenums="1" hl_lines="17 18"
 @router.get(

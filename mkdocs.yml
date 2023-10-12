@@ -43,10 +43,10 @@ nav:
     - Users and Groups: accounts/identities/users-groups.md
     - Roles: accounts/identities/roles.md
   - Applications:
-    - Applications: accounts/applications/applications.md
-    - Applicative Hierarchies: accounts/applications/applicative-hierarchies.md
-    - Resources: accounts/applications/resources.md
-    - Actions: accounts/applications/actions.md
+    - Applications: accounts/projects/projects.md
+    - Applicative Hierarchies: accounts/projects/applicative-hierarchies.md
+    - Resources: accounts/projects/resources.md
+    - Actions: accounts/projects/actions.md
 - Authenticate:
   - Authentication: authenticate/authentication-providers/authentication.md
   - Provision Users:

@@ -1,3 +1,3 @@
 # Applicative Hierarchies
 
-An application is divided into `domains`.
+An project is divided into `domains`.
