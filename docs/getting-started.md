@@ -35,14 +35,14 @@ Morever we have a single resource which is `person` that is available on both do
 
 Finally for each reasource you need to create actions.
 
-| ACTION                                 | ORGANISATION-MANAGEMENT | TIME-MANAGEMENT         |
-|----------------------------------------|-------------------------|-------------------------|
-| people:ReadTimesheet   |                         | DATA-ENTRY              |
-| people:CreateTimesheet |                         | DATA-ENTRY              |
-| people:UpdateTimesheet |                         | DATA-ENTRY              |
-| people:DeleteTimesheet |                         | DATA-ENTRY              |
-| people:ListEmployee       | EXPLORE                 |                         |
-| people:ReadEmployee       | EXPLORE                 |                         |
+| ACTION                    | ORGANISATION-MANAGEMENT | TIME-MANAGEMENT         |
+|---------------------------|-------------------------|-------------------------|
+| people:ReadTimesheet      |                         | YES                     |
+| people:CreateTimesheet    |                         | YES                     |
+| people:UpdateTimesheet    |                         | YES                     |
+| people:DeleteTimesheet    |                         | YES                     |
+| people:ListEmployee       | YES                     |                         |
+| people:ReadEmployee       | YES                     |                         |
 
 ## Create Identities
 
@@ -50,9 +50,9 @@ Naturally, it is required to create identities to access the application.
 
 | IDENTITY TYPE | UUR                                                         |
 |---------------|-------------------------------------------------------------|
-| USER          | uur:autenticami:iam-identities::581616507495:people/john    |
-| ROLE          | uur:autenticami:iam-identities::581616507495:role/manager   |
-| ROLE          | uur:autenticami:iam-identities::581616507495:role/employee  |
+| USER          | uur:581616507495:default:autenticami:iam:user/john    |
+| ROLE          | uur:581616507495:default:autenticami:iam:role/manager   |
+| ROLE          | uur:581616507495:default:autenticami:iam:role/employee  |
 
 ## Create Permissions and Policies
 
@@ -72,7 +72,7 @@ At this point, all that remains is to grant the permissions by creating policies
         "people:ReadEmployee"
       ],
       "Resources": [
-        "uur:hr-app:organisation:explore:581616507495:people/*"
+        "uur:581616507495:default:hr-app:organisation:people/*"
       ]
     },
     {
@@ -84,7 +84,7 @@ At this point, all that remains is to grant the permissions by creating policies
         "people:DeleteTimesheet"
       ],
       "Resources": [
-        "uur:hr-app:time-management:data-entry:581616507495:people/*"
+        "uur:581616507495:default:hr-app:time-management:people/*"
       ]
     }
   ],
@@ -95,7 +95,7 @@ At this point, all that remains is to grant the permissions by creating policies
         "people:Read"
       ],
       "Resources": [
-        "uur:hr-app:time-management:data-entry:581616507495:people/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
+        "uur:581616507495:default:hr-app:time-management:people/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
       ]
     }
   ]

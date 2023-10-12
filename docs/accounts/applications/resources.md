@@ -3,7 +3,7 @@
 A resource represents a resource from a third-party application.
 For each resource, you can specify a collection of actions and tags.
 
-A resource is uniquely identified with an `UUR` (Universally unique resource) which looks like `uur:hr-app:time-management:data-entry:581616507495:people/*`.
+A resource is uniquely identified with an `UUR` (Universally unique resource) which looks like `uur:581616507495:default:hr-app:time-management:people/*`.
 
 An `UUR` is composed by multiple sections `uur:{account}:{tenant}:{application}:{domain}:{resource}/{resource-filter}`:
 
