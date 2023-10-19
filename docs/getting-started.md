@@ -61,11 +61,11 @@ At this point, all that remains is to grant the permissions by creating policies
 ```json linenums="1"
 {
   "Syntax": "autenticami1",
-  "Label": "PeopleBaseReader",
+  "Name": "PeopleBaseReader",
   "Type": "ACL",
   "Permit": [
     {
-      "Label": "permit-hr/person/reader/any",
+      "Name": "permit-hr/person/reader/any",
       "Actions": [
         "people:ListEmployee",
         "people:ReadEmployee"
@@ -75,7 +75,7 @@ At this point, all that remains is to grant the permissions by creating policies
       ]
     },
     {
-      "Label": "permit-hr/timesheet/writer/any",
+      "Name": "permit-hr/timesheet/writer/any",
       "Actions": [
         "people:ReadTimesheet",
         "people:CreateTimesheet",
@@ -89,7 +89,7 @@ At this point, all that remains is to grant the permissions by creating policies
   ],
   "Forbid": [
     {
-      "Label": "forbid-write-hr/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
+      "Name": "forbid-write-hr/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
       "Actions": [
         "people:Read"
       ],
