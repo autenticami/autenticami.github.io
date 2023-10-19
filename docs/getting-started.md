@@ -60,9 +60,8 @@ At this point, all that remains is to grant the permissions by creating policies
 
 ```json linenums="1"
 {
-  "Version": "2022-07-21",
+  "Syntax": "autenticami1",
   "Label": "PeopleBaseReader",
-  "Description": "This policy enable List and Read access to employee and timesheet of the domain people.",
   "Type": "ACL",
   "Permit": [
     {

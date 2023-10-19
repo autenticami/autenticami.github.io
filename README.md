@@ -18,9 +18,8 @@ Below is a sample policy document for granting access to the Employee and Timesh
 
 ```json linenums="1"
 {
-  "Version": "2022-07-21",
+  "Syntax": "autenticami1",
   "Label": "PeopleBaseReader",
-  "Description": "This policy enable List and Read access to employee and timesheet of the domain people.",
   "Type": "ACL",
   "Permit": [
     {

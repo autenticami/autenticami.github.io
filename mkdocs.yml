@@ -66,9 +66,9 @@ nav:
       - Policies: access-management/policies.md
   - Reference: 
       - Policies: 
-        - "2022-07-21":
-          - Version: access-management/reference/policies/v2022-07-21/index.md
-          - Json Elements: access-management/reference/policies/v2022-07-21/json-elements.md
+        - "v1":
+          - Syntax: access-management/reference/policies/v1/index.md
+          - Json Elements: access-management/reference/policies/v1/json-elements.md
 - Console & Endpoints:
   - Management Console: console-endpoints/console.md
   - Endpoints: console-endpoints/endpoints.md
