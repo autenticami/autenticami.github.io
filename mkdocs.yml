@@ -72,6 +72,8 @@ nav:
 - Console & Endpoints:
   - Management Console: console-endpoints/console.md
   - Endpoints: console-endpoints/endpoints.md
+- Agents:
+  - PDP: agents/pdp.md
 - SDKs:
   - sdks/index.md
 
