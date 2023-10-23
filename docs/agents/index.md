@@ -1,8 +1,8 @@
 # Agent
 
-An `Autenticami Agent` is a computing node that is responsible to ran more than one service.
+An `Autenticami Agent` is responsible to ran more than one service.
 
-The Agent can be executed either as local or remote node.
+The Agent can be executed either as local or remote agent.
 
 ## Local Agent
 

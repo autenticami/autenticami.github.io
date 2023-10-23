@@ -41,4 +41,4 @@ There are two types of policies:
 
 ## Policy Statement
 
-A policy statement list acctions associated to resources.
+A policy statement list actions associated to resources.

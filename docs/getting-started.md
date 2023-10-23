@@ -3,10 +3,11 @@
 Let's take a third-party HR project as an example. As a developer you need to:
 
 - [Create an Account](#create-an-account)
-- [Define Domains](#define-domains)
 - [Create Identities](#create-identities)
+- [Create Projects and Domains](#create-projects-and-domains)
+- [Create Resources and Actions](#create-resources-and-actions)
 - [Create Permissions and Policies](#create-permissions-and-policies)
-- [Application Integration via SDK](#application-integration-via-sdk)
+- [Implement a Policy Enforcement Point via SDK](#implement-a-policy-enforcement-point-via-sdk)
 
 ## Create an Account
 
@@ -16,7 +17,17 @@ The very first step is to create an account.
 |------------------|----------------|
 | john@example.com | 581616507495   |
 
-## Define Domains
+## Create Identities
+
+Naturally, it is required to create identities and associate them with a tenant.
+
+| IDENTITY TYPE | UUR                                                         |
+|---------------|-------------------------------------------------------------|
+| USER          | uur:581616507495:default:autenticami:iam:user/john    |
+| ROLE          | uur:581616507495:default:autenticami:iam:role/manager   |
+| ROLE          | uur:581616507495:default:autenticami:iam:role/employee  |
+
+## Create Projects and Domains
 
 Once the account has been created you can proceed with the creation of project and its domains.
 
@@ -31,28 +42,18 @@ At this stage of the development the HR project has two domains:
 
 Morever we have a single resource which is `person` that is available on both domains.
 
-### Person actions
+### Create Resources and Actions
 
 Finally for each reasource you need to create actions.
 
 | ACTION                    | ORGANISATION-MANAGEMENT | TIME-MANAGEMENT         |
 |---------------------------|-------------------------|-------------------------|
-| people:ReadTimesheet      |                         | YES                     |
-| people:CreateTimesheet    |                         | YES                     |
-| people:UpdateTimesheet    |                         | YES                     |
-| people:DeleteTimesheet    |                         | YES                     |
-| people:ListEmployee       | YES                     |                         |
-| people:ReadEmployee       | YES                     |                         |
-
-## Create Identities
-
-Naturally, it is required to create identities to access the project.
-
-| IDENTITY TYPE | UUR                                                         |
-|---------------|-------------------------------------------------------------|
-| USER          | uur:581616507495:default:autenticami:iam:user/john    |
-| ROLE          | uur:581616507495:default:autenticami:iam:role/manager   |
-| ROLE          | uur:581616507495:default:autenticami:iam:role/employee  |
+| person:ReadTimesheet      |                         | YES                     |
+| person:CreateTimesheet    |                         | YES                     |
+| person:UpdateTimesheet    |                         | YES                     |
+| person:DeleteTimesheet    |                         | YES                     |
+| person:ListEmployee       | YES                     |                         |
+| person:ReadEmployee       | YES                     |                         |
 
 ## Create Permissions and Policies
 
@@ -61,29 +62,29 @@ At this point, all that remains is to grant the permissions by creating policies
 ```json linenums="1"
 {
   "Syntax": "autenticami1",
-  "Name": "PeopleBaseReader",
+  "Name": "person-base-reader",
   "Type": "ACL",
   "Permit": [
     {
       "Name": "permit-hr/person/reader/any",
       "Actions": [
-        "people:ListEmployee",
-        "people:ReadEmployee"
+        "person:ListEmployee",
+        "person:ReadEmployee"
       ],
       "Resources": [
-        "uur:581616507495:default:hr-app:organisation:people/*"
+        "uur:581616507495:default:hr-app:organisation:person/*"
       ]
     },
     {
       "Name": "permit-hr/timesheet/writer/any",
       "Actions": [
-        "people:ReadTimesheet",
-        "people:CreateTimesheet",
-        "people:UpdateTimesheet",
-        "people:DeleteTimesheet"
+        "person:ReadTimesheet",
+        "person:CreateTimesheet",
+        "person:UpdateTimesheet",
+        "person:DeleteTimesheet"
       ],
       "Resources": [
-        "uur:581616507495:default:hr-app:time-management:people/*"
+        "uur:581616507495:default:hr-app:time-management:person/*"
       ]
     }
   ],
@@ -91,17 +92,17 @@ At this point, all that remains is to grant the permissions by creating policies
     {
       "Name": "forbid-write-hr/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
       "Actions": [
-        "people:Read"
+        "person:Read"
       ],
       "Resources": [
-        "uur:581616507495:default:hr-app:time-management:people/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
+        "uur:581616507495:default:hr-app:time-management:person/bc182146-1598-4fde-99aa-b2d4d08bc1e2"
       ]
     }
   ]
 }
 ```
 
-## Application Integration via SDK
+## Implement a Policy Enforcement Point via SDK
 
 Once everything is configured, you can go ahead with the integration into your project.
 This can be done using an Autenticami SDK for your project language.

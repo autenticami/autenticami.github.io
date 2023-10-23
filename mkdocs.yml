@@ -74,8 +74,8 @@ nav:
 #   - Endpoints: console-endpoints/endpoints.md
 - Agents:
   - agents/index.md
-- SDKs:
-  - sdks/index.md
+- Policy Enforcement Point:
+  - PEP: pep/index.md
 
 # watch:
 plugins:
