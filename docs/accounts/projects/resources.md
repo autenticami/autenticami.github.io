@@ -9,7 +9,7 @@ An `UUR` is composed by multiple sections `uur:{account}:{tenant}:{project}:{dom
 
 - **Account**: an `autenticami` account number
 - **Tenant**: an `autenticami` tenant number
-- **Application**: name of the project to which the resource belongs
+- **Project**: name of the project to which the resource belongs
 - **Domain**: name of the domain to which the resource belongs
 - **Resource**: resource type
 - **Resource Filter**: resource filter.

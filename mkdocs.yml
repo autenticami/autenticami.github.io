@@ -42,25 +42,25 @@ nav:
     - accounts/identities/identities.md
     - Users and Groups: accounts/identities/users-groups.md
     - Roles: accounts/identities/roles.md
-  - Applications:
-    - Applications: accounts/projects/projects.md
-    - Applicative Hierarchies: accounts/projects/applicative-hierarchies.md
+  - Projects:
+    - accounts/projects/projects.md
+    - Domains: accounts/projects/project-domains.md
     - Resources: accounts/projects/resources.md
     - Actions: accounts/projects/actions.md
-- Authenticate:
-  - Authentication: authenticate/authentication-providers/authentication.md
-  - Provision Users:
-    - authenticate/identity-providers/identity-provider.md
-- Secure:
-  - Protect your resources:
-    - Tokens:
-      - Token Based Authentication: secure/protect-your-resources/tokens/index.md
-      - ID Token: secure/protect-your-resources/tokens/id-token/index.md
-      - Access Token: secure/protect-your-resources/tokens/access-token/index.md
-      - Refresh Token: secure/protect-your-resources/tokens/refresh-token/index.md
-  - References: 
-    - RFCs: secure/reference/rfcs.md
-    - Tools: secure/reference/tools.md
+# - Authenticate:
+#   - Authentication: authenticate/authentication-providers/authentication.md
+#   - Provision Users:
+#     - authenticate/identity-providers/identity-provider.md
+# - Secure:
+#   - Protect your resources:
+#     - Tokens:
+#       - Token Based Authentication: secure/protect-your-resources/tokens/index.md
+#       - ID Token: secure/protect-your-resources/tokens/id-token/index.md
+#       - Access Token: secure/protect-your-resources/tokens/access-token/index.md
+#       - Refresh Token: secure/protect-your-resources/tokens/refresh-token/index.md
+#   - References: 
+#     - RFCs: secure/reference/rfcs.md
+#     - Tools: secure/reference/tools.md
 - Access Management:
   - Permissions and Policies: 
       - Policies: access-management/policies.md
@@ -69,11 +69,11 @@ nav:
         - "v1":
           - Syntax: access-management/reference/policies/v1/index.md
           - Json Elements: access-management/reference/policies/v1/json-elements.md
-- Console & Endpoints:
-  - Management Console: console-endpoints/console.md
-  - Endpoints: console-endpoints/endpoints.md
+# - Console & Endpoints:
+#   - Management Console: console-endpoints/console.md
+#   - Endpoints: console-endpoints/endpoints.md
 - Agents:
-  - PDP: agents/pdp.md
+  - agents/index.md
 - SDKs:
   - sdks/index.md
 

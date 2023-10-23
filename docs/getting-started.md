@@ -3,10 +3,10 @@
 Let's take a third-party HR project as an example. As a developer you need to:
 
 - [Create an Account](#create-an-account)
-- [Create the Applicative Hierarchy](#create-the-applicative-hierarchy)
+- [Define Domains](#define-domains)
 - [Create Identities](#create-identities)
 - [Create Permissions and Policies](#create-permissions-and-policies)
-- [Application Integration via SDK](#project-integration-via-sdk)
+- [Application Integration via SDK](#application-integration-via-sdk)
 
 ## Create an Account
 
@@ -16,11 +16,11 @@ The very first step is to create an account.
 |------------------|----------------|
 | john@example.com | 581616507495   |
 
-## Create the Applicative Hierarchy
+## Define Domains
 
-Once the account has been created you can proceed with the creation of project and its applicative hierarchy.
+Once the account has been created you can proceed with the creation of project and its domains.
 
-| APPLICATION NAME | CODE   |
+| PROJECT NAME | CODE   |
 |------------------|--------|
 | HR Application   | hr-app |
 
