@@ -5,7 +5,7 @@
 - **Identity Service (IDS):** The IDS takes care of exchanging the third-party token with an autenticami token. Through this service it is possible to assume a role identity.
 - **Policy Decision Point (PDP):** The PDP is responsible for evaluating policies and deciding whether an identity can perform an action. Policies are retrieved through the PAP.
 - **Policy Administration Point (PAP):** The PAP is responsible for managing and distributing policies.
-- **Autenticami Administration Point (AAP):** The AAP is responsible for account and project management.
+- **Account Administration Point (AAP):** The AAP is responsible for account and project management.
 - **Policy Enforcement Point (PEP):** The PEP is responsible for enforcing policies.
 
 !!! info "INFO"
