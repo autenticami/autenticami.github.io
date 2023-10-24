@@ -4,9 +4,7 @@
 
 ## Users
 
-A `User` is an identity representing a single person or project that has specific permissions.
-
-Both temporary and permanent credentials can be granted to a user.
+A `User` is an identity representing a single person or FID (Function Identifier) that has specific permissions.
 
 
 ## Group

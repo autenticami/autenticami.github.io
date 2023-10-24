@@ -15,7 +15,7 @@ There are two types of policies:
 
 ## Principal Trust Identity Policy
 
-A `Principal Trust Identit Policy (TRUST)` defines which principal can assume the role, and under which conditions.
+A `Principal Trust Identity Policy (TRUST)` defines which principal can assume the role, and under which conditions.
 
 ## Access Control List Policy
 

@@ -35,6 +35,7 @@ theme:
 nav:
 - Autenticami:
   - index.md
+  - Architecture: architecture-components.md
   - Getting Started: getting-started.md
 - Accounts:
   - accounts/accounts.md

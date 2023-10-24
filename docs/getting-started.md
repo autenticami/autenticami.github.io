@@ -1,6 +1,6 @@
 # Getting Started
 
-Let's take a third-party HR project as an example. As a developer you need to:
+Let's take an HR project as an example. As a developer you need to:
 
 - [Create an Account](#create-an-account)
 - [Create Identities](#create-identities)
