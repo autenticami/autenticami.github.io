@@ -20,9 +20,7 @@ An authentication-based application flow can be summarized with the following st
 - Optionally the application can assume a role by the means of the IDS.
 - The Application use an Autenticami SDK to act as a PEP and check the permissions with the PDP.
 - The PDP retrieves policies and attributes from the PAP.
-
-!!! info "INFO"
-    If the application has already been authenticated with the external identity provider it is possible just to swap the token with the Identity Service.
+- The PEP evaluates the policies and attributes and decides whether the identity can perform the action.
 
 The following diagram shows the applicative flow of an application using `Autenticami`.
 
