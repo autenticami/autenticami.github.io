@@ -26,4 +26,4 @@ An authentication-based application flow can be summarized with the following st
 
 The following diagram shows the applicative flow of an application using `Autenticami`.
 
-![Architectural diagram](assets/images/autenticami-architecture.png)
+![Architectural diagram](assets/images/autenticami-concepts.png)
