@@ -15,9 +15,8 @@
 
 An authentication-based application flow can be summarized with the following steps:
 
-- The Developer configures the Application and its Projects using the AAP.
-- The Application autenticates with the external identity provider by the means of the IDS.
-- The IDS swaps the external token with an autenticami token.
+- The Developer configures the Account and its Projects using the AAP.
+- The Application autenticates with the external identity and swaps the external token with an autenticami token.
 - Optionally the application can assume a role by the means of the IDS.
 - The Application use an Autenticami SDK to act as a PEP and check the permissions with the PDP.
 - The PDP retrieves policies and attributes from the PAP.
