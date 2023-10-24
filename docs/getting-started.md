@@ -4,6 +4,7 @@ Let's take a third-party HR project as an example. As a developer you need to:
 
 - [Create an Account](#create-an-account)
 - [Create Identities](#create-identities)
+- [Configure a Project](#configure-a-project)
 - [Create Projects and Domains](#create-projects-and-domains)
 - [Create Resources and Actions](#create-resources-and-actions)
 - [Create Permissions and Policies](#create-permissions-and-policies)
@@ -27,7 +28,9 @@ Naturally, it is required to create identities and associate them with a tenant.
 | ROLE          | uur:581616507495:default:autenticami:iam:role/manager   |
 | ROLE          | uur:581616507495:default:autenticami:iam:role/employee  |
 
-## Create Projects and Domains
+## Configure a Project
+
+### Create Projects and Domains
 
 Once the account has been created you can proceed with the creation of project and its domains.
 
@@ -55,7 +58,7 @@ Finally for each reasource you need to create actions.
 | person:ListEmployee       | YES                     |                         |
 | person:ReadEmployee       | YES                     |                         |
 
-## Create Permissions and Policies
+### Create Permissions and Policies
 
 At this point, all that remains is to grant the permissions by creating policies and assigning them to the identities.
 
