@@ -2,11 +2,11 @@
 
 `Autenticami` is composed of several components.
 
-- **Identity Service (IDS):** The identitiy service is responsible swapping the third party token with an autenticami token. By the means of this service it is possible to assume a role identity.
-- **Policy Decision Point (PDP):** The policy decision point is responsible for evaluating the policies and deciding if a identity is allowed to perform an action. Policies are retrieved by the means of the Policy Administration Point (PAP).
-- **Policy Administration Point (PAP):** The policy administration point is responsible for managing the policies.
-- **Autenticami Administration Point (AAP):** The autenticami administration point is responsible for managing accounts and projects.
-- **Policy Enforcement Point (PEP):** The policy enforcement point is responsible for enforcing the policies.
+- **Identity Service (IDS):** The IDS takes care of exchanging the third-party token with an autenticami token. Through this service it is possible to assume a role identity.
+- **Policy Decision Point (PDP):** The PDP is responsible for evaluating policies and deciding whether an identity can perform an action. Policies are retrieved through the PAP.
+- **Policy Administration Point (PAP):** The PAP is responsible for managing and distributing policies.
+- **Autenticami Administration Point (AAP):** The AAP is responsible for account and project management.
+- **Policy Enforcement Point (PEP):** The PEP is responsible for enforcing policies.
 
 !!! info "INFO"
     Identity Service has to be configured with a plugin that implements the integration with an external identity provider.
