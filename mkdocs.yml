@@ -48,10 +48,6 @@ nav:
     - Domains: accounts/projects/project-domains.md
     - Resources: accounts/projects/resources.md
     - Actions: accounts/projects/actions.md
-# - Authenticate:
-#   - Authentication: authenticate/authentication-providers/authentication.md
-#   - Provision Users:
-#     - authenticate/identity-providers/identity-provider.md
 # - Secure:
 #   - Protect your resources:
 #     - Tokens:
@@ -73,8 +69,10 @@ nav:
 # - Console & Endpoints:
 #   - Management Console: console-endpoints/console.md
 #   - Endpoints: console-endpoints/endpoints.md
-- Agents:
-  - agents/index.md
+- Endpoints:
+  - endpoints/index.md
+  - Agents:
+    - PDP Agent: endpoints/agents/pdp-agent.md
 - Policy Enforcement Point:
   - PEP: pep/index.md
 
