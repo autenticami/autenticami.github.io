@@ -1,4 +1,4 @@
-# Architecture and Concepts
+# Concepts
 
 `Autenticami` is composed of several components.
 
