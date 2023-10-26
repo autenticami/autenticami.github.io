@@ -13,14 +13,14 @@
 
 ## Applicative Flow
 
-An authentication-based application flow can be summarized with the following steps:
+An Autenticami application flow can be summarized with the following steps:
 
 - The Developer configures the Account and its Projects using the AAP.
-- The Application autenticates with the external identity and swaps the external token with an autenticami token.
-- Optionally the application can assume a role by the means of the IDS.
+- The Application autenticates with the external identity and swaps the external token with an autenticami token using the IDS.
+- Optionally the application assume a role by the means of the IDS.
 - The Application use an Autenticami SDK to act as a PEP and check the permissions with the PDP.
 - The PDP retrieves policies and attributes from the PAP.
-- The PEP evaluates the policies and attributes and decides whether the identity can perform the action.
+- The PEP evaluates the policies and attributes and evaluate whether the identity can perform the action or not.
 
 The following diagram shows the applicative flow of an application using `Autenticami`.
 
