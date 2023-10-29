@@ -69,10 +69,9 @@ nav:
 # - Console & Endpoints:
 #   - Management Console: console-endpoints/console.md
 #   - Endpoints: console-endpoints/endpoints.md
-- Endpoints:
-  - endpoints/index.md
-  - Agents:
-    - PDP Agent: endpoints/agents/pdp-agent.md
+- Agents:
+  - agents/index.md
+  - PDP Agent: agents/pdp-agent.md
 - Policy Enforcement Point:
   - PEP: pep/index.md
 
