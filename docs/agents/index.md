@@ -1,6 +1,6 @@
-# Endpoints
+# Agents
 
-Enpoints are exposed using agents:
+`Autenticami` is composed by several agents:
 
 - AAP Agent
 - IDP Agent
