@@ -14,7 +14,6 @@ Here list of the environment variables that can be used to configure any of the 
 | AUTENTICAMI-AGENT-APPDATA |           | .       | Application data folder   |
 | AUTENTICAMI-AGENT-PORT    |           | 9090    | Application data folder   |
 
-
 ## Local configuration
 
 Below is the list of environment variables that can be used to configure a local pdp agent:
