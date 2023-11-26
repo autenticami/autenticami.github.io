@@ -11,8 +11,8 @@ Here list of the environment variables that can be used to configure any of the 
 
 | ENV VARIABLE              | VALUES    | DEFAULT | DESCRIPTION               |
 |---------------------------|-----------|---------|---------------------------|
-| AUTENTICAMI-AGENT-APPDATA |           | .       | Application data folder   |
-| AUTENTICAMI-AGENT-PORT    |           | 9090    | Application data folder   |
+| AUTENTICAMI_AGENT_APPDATA |           | .       | Application data folder   |
+| AUTENTICAMI_AGENT_PORT    |           | 9090    | Application data folder   |
 
 ## Local configuration
 
@@ -20,7 +20,7 @@ Below is the list of environment variables that can be used to configure a local
 
 | ENV VARIABLE              | VALUES    | DEFAULT | DESCRIPTION               |
 |---------------------------|-----------|---------|---------------------------|
-| AUTENTICAMI-AGENT-TYPE    | PDP-LOCAL |         | PDP Agent running locally |
+| AUTENTICAMI_AGENT_TYPE    | PDP-LOCAL |         | PDP Agent running locally |
 
 ## Remote configuration
 
@@ -28,4 +28,4 @@ Below is the list of environment variables that can be used to configure a remot
 
 | ENV VARIABLE              | VALUES     | DEFAULT | DESCRIPTION                |
 |---------------------------|------------|---------|----------------------------|
-| AUTENTICAMI-AGENT-TYPE    | PDP-REMOTE |         | PDP Agent running remotely |
+| AUTENTICAMI_AGENT_TYPE    | PDP-REMOTE |         | PDP Agent running remotely |
