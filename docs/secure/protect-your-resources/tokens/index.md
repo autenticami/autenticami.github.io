@@ -39,9 +39,9 @@ Tokens are returned by the token endpoint moreover they should be transmitted to
 
 To create a JWT, the following steps are performed. The order of the steps is not significant in cases where there are no dependencies between the inputs and outputs of the steps.
 
-1. Create a JWT Claims Set containing the desired claims. Note that whitespace is explicitly allowed in the representation and no canonicalization need be performed before encoding.
+1. Create a JWT Claims Set containing the desired claims. Note that whitespace is explicitly permitted in the representation and no canonicalization need be performed before encoding.
 2. Let the Message be the octets of the UTF-8 representation of the JWT Claims Set.
-3. Create a JOSE Header containing the desired set of Header Parameters. The JWT MUST conform to either the [JWS] or [JWE] specification. Note that whitespace is explicitly allowed in the representation and no canonicalization need be performed before encoding.
+3. Create a JOSE Header containing the desired set of Header Parameters. The JWT MUST conform to either the [JWS] or [JWE] specification. Note that whitespace is explicitly permitted in the representation and no canonicalization need be performed before encoding.
 4. Depending upon whether the JWT is a JWS or JWE, there are two cases:
     - If the JWT is a JWS, create a JWS using the Message as the JWS Payload; all steps specified in [JWS] for creating a JWS MUST be followed.
     - Else, if the JWT is a JWE, create a JWE using the Message as the plaintext for the JWE; all steps specified in [JWE] for creating a JWE MUST be followed.
