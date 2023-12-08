@@ -4,14 +4,16 @@ Autenticami allows the creation of `Policies` that can be associated with an ide
 
 In particular policies are `Identity-based policies` as they can be attached only to identities.
 
-`Policies` are implemented in the form of documents that define a list of [policy statements](#policy-statement) that can be allowed or denied.
+`Policies` are implemented in the form of documents that define a list of [policy statements](#policy-statement) that can be permitted or fobidden.
 
 It is possible to divide the policies into several documents and these will be aggregated during the evaluation phase
 
 There are two types of policies:
 
-- [Principal Trust Identity Policy](#principal-trust-identity-policy)
-- [Access Control List Policy](#access-control-list-policy)
+- [Policies](#policies)
+  - [Principal Trust Identity Policy](#principal-trust-identity-policy)
+  - [Access Control List Policy](#access-control-list-policy)
+  - [Policy Statement](#policy-statement)
 
 ## Principal Trust Identity Policy
 
