@@ -11,6 +11,7 @@ Here list of the environment variables that can be used to configure any of the 
 
 | ENV VARIABLE              | VALUES    | DEFAULT | DESCRIPTION               |
 |---------------------------|-----------|---------|---------------------------|
+| AUTENTICAMI-ENVIRONMENT   |           | LOCAL   | Environment               |
 | AUTENTICAMI_AGENT_APPDATA |           | .       | Application data folder   |
 | AUTENTICAMI_AGENT_PORT    |           | 9090    | Application data folder   |
 
