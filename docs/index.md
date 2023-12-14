@@ -47,7 +47,8 @@ Below is a sample policy document for granting access to the Employee and Timesh
       ],
       "Resources": [
         "uur:581616507495:default:hr-app:time-management:person/*"
-      ]
+      ],
+      "Condition": "DateGreaterThan({{.Autenticami.TokenIssueTime}})' && DateLessThan('{{.Autenticami.CurrentTime}}': '2023-12-31T23:59:59Z')"
     }
   ],
   "Forbid": [
