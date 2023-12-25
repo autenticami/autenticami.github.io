@@ -70,7 +70,7 @@ At this point, all that remains is to grant the permissions by creating policies
 </div>
 
 
-`Autenticami` is a multi-account `Identity and Access Management` (IAM or IdAM) solution to enable a modern identity-based access control.
+`Autenticami` A Multi-Account and Multi-Tenant Policy-Based Access Control solution to enable a modern identity-based access control.
 
 As an `Autenticami administrator` you can create multiple accounts and create multiple projects within each account.
 
@@ -90,7 +90,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
 {
   "Syntax": "autenticami1",
   "Name": "person-base-reader",
-  "Type": "ACL",
+  "Type": "AC",
   "Permit": [
     {
       "Name": "permit-hr/person/reader/any",

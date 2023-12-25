@@ -12,16 +12,16 @@ There are two types of policies:
 
 - [Policies](#policies)
   - [Principal Trust Identity Policy](#principal-trust-identity-policy)
-  - [Access Control List Policy](#access-control-list-policy)
+  - [Access Control Policy](#access-control-policy)
   - [Policy Statement](#policy-statement)
 
 ## Principal Trust Identity Policy
 
 A `Principal Trust Identity Policy (TRUST)` defines which principal can assume the role, and under which conditions.
 
-## Access Control List Policy
+## Access Control Policy
 
-An `Access Control List Policy (ACL)` lists the actions that can/cannot be performed and the resourcers those actions can affect.
+An `Access Control Policy (AC)` lists the actions that can/cannot be performed and the resourcers those actions can affect.
 
 !!! info "INFO"
     Identities are themselves resources that can be target of `policies` actions.

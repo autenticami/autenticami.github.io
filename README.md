@@ -4,7 +4,7 @@
   <img src="docs/assets/images/autenticami-black-logo.png" width="250px" height="auto"/>
 </div>
 
-`Autenticami` is a multi-account `Identity and Access Management` (IAM or IdAM) solution to enable a modern identity-based access control.
+`Autenticami` A Multi-Account and Multi-Tenant Policy-Based Access Control solution to enable a modern identity-based access control.
 
 As an `Autenticami administrator` you can create multiple accounts and create multiple projects within each account.
 
@@ -28,7 +28,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
 </div>
 
 
-`Autenticami` is a multi-account `Identity and Access Management` (IAM or IdAM) solution to enable a modern identity-based access control.
+`Autenticami` A Multi-Account and Multi-Tenant Policy-Based Access Control solution to enable a modern identity-based access control.
 
 As an `Autenticami administrator` you can create multiple accounts and create multiple projects within each account.
 
@@ -48,7 +48,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
 {
   "Syntax": "autenticami1",
   "Name": "person-base-reader",
-  "Type": "ACL",
+  "Type": "AC",
   "Permit": [
     {
       "Name": "permit-hr/person/reader/any",

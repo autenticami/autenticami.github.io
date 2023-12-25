@@ -28,6 +28,6 @@ Autenticami exposes api for `Identity and Access Management`.
 
 | Name                   |  Type | Endpoint                                                                                                                                      |
 |----------------------- |-------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `Accessible Apps`      |  API  | [https://accounts.autenticami.com/v1/acl/apps](https://accounts.autenticami.com/v1/acl/apps)                                                  |
-| `Permissions`          |  API  | [https://accounts.autenticami.com/v1/acl/permissions](https://accounts.autenticami.com/v1/acl/permissions)                                    |
-| `Action Evaluation`    |  API  | [https://accounts.autenticami.com/v1/acl/action](https://accounts.autenticami.com/v1/acl/action)                                              |
+| `Accessible Apps`      |  API  | [https://accounts.autenticami.com/v1/ac/apps](https://accounts.autenticami.com/v1/ac/apps)                                                  |
+| `Permissions`          |  API  | [https://accounts.autenticami.com/v1/ac/permissions](https://accounts.autenticami.com/v1/ac/permissions)                                    |
+| `Action Evaluation`    |  API  | [https://accounts.autenticami.com/v1/ac/action](https://accounts.autenticami.com/v1/ac/action)                                              |
