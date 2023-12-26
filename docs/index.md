@@ -28,7 +28,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
   "Type": "AC",
   "Permit": [
     {
-      "Name": "permit-hr/person/reader/any",
+      "Name": "permit-hr:person:reader:any",
       "Actions": [
         "person:ListEmployee",
         "person:ReadEmployee"
@@ -38,7 +38,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
       ]
     },
     {
-      "Name": "permit-hr/timesheet/writer/any",
+      "Name": "permit-hr:timesheet:writer:any",
       "Actions": [
         "person:ReadTimesheet",
         "person:CreateTimesheet",
@@ -53,7 +53,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
   ],
   "Forbid": [
     {
-      "Name": "forbid-write-hr/timesheet/writer/bc182146-1598-4fde-99aa-b2d4d08bc1e2",
+      "Name": "forbid-write-hr:timesheet:writer:bc182146-1598-4fde-99aa-b2d4d08bc1e2",
       "Actions": [
         "person:Read"
       ],
