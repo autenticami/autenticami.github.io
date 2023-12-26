@@ -70,7 +70,7 @@ At this point, all that remains is to grant the permissions by creating policies
 </div>
 
 
-`Autenticami` A Multi-Account and Multi-Tenant Policy-Based Access Control solution to enable a modern identity-based access control.
+`Autenticami` A Multi-Account and Multi-Tenant Policy-Based Access Control Platform to enable a modern Identity-Based Access Control.
 
 As an `Autenticami administrator` you can create multiple accounts and create multiple projects within each account.
 

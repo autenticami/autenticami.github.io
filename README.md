@@ -4,7 +4,7 @@
   <img src="docs/assets/images/autenticami-black-logo.png" width="250px" height="auto"/>
 </div>
 
-`Autenticami` A Multi-Account and Multi-Tenant Policy-Based Access Control solution to enable a modern identity-based access control.
+`Autenticami` A Multi-Account and Multi-Tenant Policy-Based Access Control Platform to enable a modern Identity-Based Access Control.
 
 As an `Autenticami administrator` you can create multiple accounts and create multiple projects within each account.
 
@@ -28,7 +28,7 @@ Below is a sample policy document for granting access to the Employee and Timesh
 </div>
 
 
-`Autenticami` A Multi-Account and Multi-Tenant Policy-Based Access Control solution to enable a modern identity-based access control.
+`Autenticami` A Multi-Account and Multi-Tenant Policy-Based Access Control Platform to enable a modern Identity-Based Access Control.
 
 As an `Autenticami administrator` you can create multiple accounts and create multiple projects within each account.
 
