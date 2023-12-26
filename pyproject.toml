@@ -39,7 +39,7 @@ classifiers = [
   "Topic :: Software Development :: Build Tools",
 ]
 dependencies = [
-  "hatchling>=1.11.0",
+  "hatchling>=1.21.0",
   "virtualenv>=20.16.2",
 ]
 dynamic = ["version"]
@@ -47,5 +47,5 @@ dynamic = ["version"]
 [tool.hatch.version]
 path = "__about__.py"
 
-[tool.hatch.metadata]
-allow-direct-references = true
+[tool.hatch.build.targets.wheel]
+packages = ["autenticami"]
