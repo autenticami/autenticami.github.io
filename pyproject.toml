@@ -45,3 +45,6 @@ dynamic = ["version"]
 
 [tool.hatch.version]
 path = "__about__.py"
+
+[tool.hatch.metadata]
+allow-direct-references = true
